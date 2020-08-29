@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"self-thinking.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="MySQL 数据库高级操作">
+<meta name="keywords" content="MySQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL数据库操作(2)">
+<meta property="og:url" content="http://self-thinking.com/2017/01/30/MySQL数据库操作-2/index.html">
+<meta property="og:site_name" content="自我随想">
+<meta property="og:description" content="MySQL 数据库高级操作">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006y8lValy1fc91a91kr7j30kt0fu0t2.jpg">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006y8lVagy1fc9211eaqwj30ko04pglj.jpg">
+<meta property="og:image" content="https://ww3.sinaimg.cn/large/006y8lVagy1fc92eu806xj30kn0cs0t2.jpg">
+<meta property="og:image" content="https://ww1.sinaimg.cn/large/006y8lVagy1fc92gniv6yj30d005z0sp.jpg">
+<meta property="og:image" content="https://ww1.sinaimg.cn/large/006y8lVagy1fc92j1ggfqj30kn09awep.jpg">
+<meta property="og:image" content="https://ww3.sinaimg.cn/large/006y8lVagy1fc92l5nfrej30h602kmx1.jpg">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006y8lVagy1fc92nu2tofj30ko0diq38.jpg">
+<meta property="og:image" content="https://ww3.sinaimg.cn/large/006y8lVagy1fc92q3wclbj30hl02m746.jpg">
+<meta property="og:image" content="https://ww1.sinaimg.cn/large/006y8lVagy1fc92qcvc2qj30hp0jnt9t.jpg">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006y8lVagy1fc92ql0r1nj30hk0gst9o.jpg">
+<meta property="og:image" content="https://ww2.sinaimg.cn/large/006y8lVagy1fc92qtg13rj30hl0gbjs4.jpg">
+<meta property="og:updated_time" content="2017-09-07T05:51:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MySQL数据库操作(2)">
+<meta name="twitter:description" content="MySQL 数据库高级操作">
+<meta name="twitter:image" content="https://ww4.sinaimg.cn/large/006y8lValy1fc91a91kr7j30kt0fu0t2.jpg">
+
+<link rel="canonical" href="http://self-thinking.com/2017/01/30/MySQL数据库操作-2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-Hans'
+  };
+</script>
+
+  <title>MySQL数据库操作(2) | 自我随想</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">自我随想</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://self-thinking.com/2017/01/30/MySQL数据库操作-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Samuel">
+      <meta itemprop="description" content="意义越是深远，过程就越是坎坷。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="自我随想">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          MySQL数据库操作(2)
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2017-01-30 23:32:00" itemprop="dateCreated datePublished" datetime="2017-01-30T23:32:00+08:00">2017-01-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2017-09-07 13:51:08" itemprop="dateModified" datetime="2017-09-07T13:51:08+08:00">2017-09-07</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据库/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>MySQL 数据库高级操作<br><a id="more"></a></p>
+<ul>
+<li>selet top 选取前面第n条记录</li>
+</ul>
+<blockquote>
+<p>slect column_name from table_name limit number;</p>
+</blockquote>
+<ul>
+<li>like 操作符</li>
+</ul>
+<blockquote>
+<p>select column_names from table_name where column_name like pattern;    #parten 为通配符 例如匹配Google    like ‘%oo%’</p>
+</blockquote>
+<ul>
+<li>in 操作符</li>
+</ul>
+<blockquote>
+<p>select column_names from table_name where column_name in (valuel1, valuel2,……);</p>
+</blockquote>
+<ul>
+<li>between 操作符</li>
+</ul>
+<blockquote>
+<p>select column_name() from table_name where column_name between valuel and value2;</p>
+</blockquote>
+<ul>
+<li>别名语法</li>
+</ul>
+<blockquote>
+<p>select colum_name as alias_name from table_name; #给列加别名</p>
+<p>select column_names from table_name as alias_name; #给表加别名</p>
+</blockquote>
+<ul>
+<li>join 表连接</li>
+</ul>
+<blockquote>
+<p>select table1.column_name, table2. column_name, ….. from table1, inser join table2,…… on table1.name = table2.name, table2.name = table3.name;</p>
+<ul>
+<li>INNER JOIN：如果表中有至少一个匹配，则返回行</li>
+<li>LEFT JOIN：即使右表中没有匹配，也从左表返回所有的行</li>
+<li>RIGHT JOIN：即使左表中没有匹配，也从右表返回所有的行   </li>
+<li>FULL JOIN：只要其中一个表中存在匹配，则返回行</li>
+</ul>
+</blockquote>
+<ul>
+<li>union 语法</li>
+</ul>
+<blockquote>
+<p>union</p>
+</blockquote>
+<blockquote>
+<p>select column_names from table1 </p>
+<p>union select column_names from table2; # 选取所有不同值</p>
+</blockquote>
+<blockquote>
+<p>union all</p>
+</blockquote>
+<blockquote>
+<p>select column_names from table1 </p>
+<p>union all  select column)names from table2;# 包括相同值</p>
+</blockquote>
+<ul>
+<li>select into 复制表或列插入新表</li>
+</ul>
+<blockquote>
+<p>select * into newtable from talbe1; #复制所有列到新表</p>
+<p>select  column_names into  newtable from table1;#复制新列到新表</p>
+</blockquote>
+<ul>
+<li>insert into select 从一个表中复制数据，把数据插入到一个已存在的表中</li>
+</ul>
+<blockquote>
+<p>insert into table2 select * from table1; #将表一中的所有列插入到表二</p>
+</blockquote>
+<blockquote>
+<p>insert into table2 (column_names) </p>
+<p>select column_names from table1;#将表一选中的列插入到表二中</p>
+</blockquote>
+<ul>
+<li>create database </li>
+</ul>
+<blockquote>
+<p>create database database_name;</p>
+</blockquote>
+<ul>
+<li>create table</li>
+</ul>
+<blockquote>
+<p>create table table_name(column_name1 data_type(size),</p>
+<p>​                                             column_name1 data_type(size),</p>
+<p>​                                              column_name1 data_type(size),</p>
+<p>​                                             ……..);</p>
+</blockquote>
+<h3 id="SQL约束"><a href="#SQL约束" class="headerlink" title="SQL约束"></a>SQL约束</h3><p>SQL 约束用于规定表中的数据规则。如果存在违反约束的数据行为，行为会被约束终止。</p>
+<ul>
+<li>SQL CREATE TABLE + CONSTRAINT 语法</li>
+</ul>
+<blockquote>
+<p>create table table_name(</p>
+<p> column_name1  data_type(size)  constraint_name,</p>
+<p> column_name1  data_type(size)   constraint_name,</p>
+<p>column_name1  data_type(size)    constraint_name,</p>
+<p>……………..</p>
+<p>); </p>
+<h4 id="约束有如下："><a href="#约束有如下：" class="headerlink" title="约束有如下："></a><strong>约束有如下：</strong></h4><ul>
+<li>not null       ——-  某列不能储存null值 </li>
+</ul>
+<blockquote>
+<p>create table Persons(</p>
+<p>P_Id int not null,#强制LastName列不接受NULL值</p>
+<p>LastName varchar(255) not null,# 如果不向字段添加值，就无法插入新记录或者更新记录</p>
+<p>FirstName varchar(255),</p>
+<p>Address varchar(255),</p>
+<p>City varchar(255))</p>
+</blockquote>
+<ul>
+<li>unique        ——-   某列的每行必须有唯一值</li>
+</ul>
+<blockquote>
+<p>CREATE TABLE Persons<br>(<br>P_Id int NOT NULL,<br>LastName varchar(255) NOT NULL,<br>FirstName varchar(255),<br>Address varchar(255),<br>City varchar(255),<br><strong>UNIQUE (P_Id，LastName)</strong>)    # 约束唯一标识数据库中的每条记录</p>
+</blockquote>
+<ul>
+<li>primary key   ——-  not null and unique</li>
+</ul>
+<blockquote>
+<p> <strong>PRIMARY KEY</strong> 约束唯一标识数据库表中的每条记录</p>
+<ul>
+<li><p>主键必须包含唯一的值</p>
+</li>
+<li><p>主键列不能包含 NULL 值</p>
+</li>
+<li><p>每个表都应该有一个主键，并且每个表只能有一个主键   </p>
+<blockquote>
+<p> CREATE TABLE Persons</p>
+<p>(</p>
+<p>P_Id int NOT NULL,</p>
+<p>LastName varchar(255) NOT NULL,</p>
+<p>FirstName varchar(255),</p>
+<p>Address varchar(255),</p>
+<p>City varchar(255),</p>
+<p><strong>PRIMARY KEY (P_Id)</strong></p>
+<p>)</p>
+<p>或者</p>
+<p>CREATE TABLE Persons<br>(<br>P_Id int <strong>NOT NULL PRIMARY KEY</strong>,<br>LastName varchar(255) NOT NULL,<br>FirstName varchar(255),<br>Address varchar(255),<br>City varchar(255)<br>)  </p>
+</blockquote>
+<ul>
+<li><p>当表已被创建时，如需在 “P_Id” 列创建 PRIMARY KEY 约束，请使用下面的 SQL：</p>
+<blockquote>
+<p>ALTER TABLE Persons</p>
+<p>ADD PRIMARY KEY (P_Id)  </p>
+<p>如果您使用 ALTER TABLE 语句添加主键，必须把主键列声明为不包含 NULL 值（在表首次创建时）</p>
+</blockquote>
+</li>
+<li><p>撤销PRIMARY KEY 约束</p>
+<blockquote>
+<p>  ALTER TABLE Persons<br>  DROP PRIMARY KEY</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>foreign key    ——– 一个表中的数据匹配拎一个表中的值的参照完整性</p>
+<blockquote>
+<p><img src="https://ww4.sinaimg.cn/large/006y8lValy1fc91a91kr7j30kt0fu0t2.jpg" alt> CREATE TABLE Orders</p>
+<p>(</p>
+<p>O_Id int NOT NULL,</p>
+<p>OrderNo int NOT NULL,</p>
+<p>P_Id int,</p>
+<p><strong>PRIMARY KEY (O_Id)</strong>,</p>
+<p><strong>FOREIGN KEY (P_Id) REFERENCES Persons(P_Id)</strong></p>
+<p>)</p>
+<p>一个表中的 FOREIGN KEY 指向另一个表中的 PRIMARY KEY</p>
+<p>  FOREIGN KEY 约束用于预防破坏表之间连接的行为。</p>
+<p> FOREIGN KEY 约束也能防止非法数据插入外键列，因为它必须是   它指向的那个表中的值之一。 </p>
+</blockquote>
+</li>
+<li><p>check            ———  保证列中的值符合指定的条件</p>
+<blockquote>
+<p> CHECK 约束用于限制列中的值的范围。</p>
+<blockquote>
+<p>CREATE TABLE Persons</p>
+</blockquote>
+<blockquote>
+<p>(</p>
+</blockquote>
+<blockquote>
+<p>P_Id int NOT NULL,</p>
+</blockquote>
+<blockquote>
+<p>LastName varchar(255) NOT NULL,</p>
+</blockquote>
+<blockquote>
+<p>FirstName varchar(255),</p>
+</blockquote>
+<blockquote>
+<p>Address varchar(255),</p>
+</blockquote>
+<blockquote>
+<p>City varchar(255),</p>
+</blockquote>
+<blockquote>
+<p>CHECK (P_Id&gt;0))</p>
+</blockquote>
+<p> 当表已被创建时，如需在 “P_Id” 列创建 CHECK 约束，请使用下面的 SQL;</p>
+<blockquote>
+<p>ALTER TABLE Persons</p>
+</blockquote>
+<blockquote>
+<p>ADD CHECK (P_Id&gt;0)</p>
+</blockquote>
+<p>  如需命名 CHECK 约束，并定义多个列的 CHECK 约束，请使用下面的 SQL 语法：</p>
+<blockquote>
+<p>ALTER TABLE Persons</p>
+</blockquote>
+<blockquote>
+<p>ADD CONSTRAINT chk_Person CHECK (P_Id&gt;0 AND City=’Sandnes’)</p>
+</blockquote>
+<p> 如需撤销 CHECK 约束，请使用下面的 SQL ;</p>
+<blockquote>
+<p>ALTER TABLE Persons</p>
+</blockquote>
+<blockquote>
+<p> DROP CHECK chk_Person   </p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>default         ———-规定没有给出列赋值的默认值</p>
+</li>
+</ul>
+<blockquote>
+<p>  下面的 SQL 在 “Persons” 表创建时在 “City” 列上创建 DEFAULT 约束：</p>
+<blockquote>
+<p> CREATE TABLE Persons</p>
+<p>(</p>
+<p>P_Id int NOT NULL,</p>
+<p>LastName varchar(255) NOT NULL,</p>
+<p>FirstName varchar(255),</p>
+<p>Address varchar(255),</p>
+<p>City varchar(255) <strong>DEFAULT ‘Sandnes’</strong></p>
+<p>)</p>
+<p> 当表已被创建时，如需在 “City” 列创建 DEFAULT 约束，请使用下面的 SQL;</p>
+<blockquote>
+<p>ALTER TABLE Persons</p>
+<p>ALTER City SET DEFAULT ‘SANDNES’ </p>
+</blockquote>
+<p>如需撤销 DEFAULT 约束，请使用下面的 SQL：</p>
+<blockquote>
+<p>ALTER TABLE Persons</p>
+<p>ALTER City DROP DEFAULT </p>
+</blockquote>
+</blockquote>
+<ul>
+<li><p>create index </p>
+<blockquote>
+<p>您可以在表中创建索引，以便更加快速高效地查询数据。</p>
+<p>用户无法看到索引，它们只能被用来加速搜索/查询。</p>
+<p> CREATE INDEX index_name</p>
+<p>ON table_name (column_name)</p>
+<p>DROP INDEX 语句用于删除表中的索引</p>
+<p>  DROP INDEX table_name.index_name</p>
+</blockquote>
+</li>
+<li><p>drop </p>
+<blockquote>
+<p> DROP TABLE table_name #   DROP TABLE 语句用于删除表。</p>
+<p>DROP DATABASE database_name # DROP DATABASE 语句用于删除数据库。</p>
+<p>   TRUNCATE TABLE table_name # 如果我们仅仅需要删除表内的数据，但并不删除表本身   </p>
+</blockquote>
+</li>
+<li><p>alter </p>
+<blockquote>
+<p> 如需在表中添加列，请使用下面的语法:</p>
+<p> ALTER TABLE table_name</p>
+<p>ADD column_name datatype</p>
+<p>  如需删除表中的列，请使用下面的语法</p>
+<p> ALTER TABLE table_name</p>
+<p>DROP COLUMN column_name</p>
+<p><img src="https://ww4.sinaimg.cn/large/006y8lVagy1fc9211eaqwj30ko04pglj.jpg" alt></p>
+<p>我们想要改变 “Persons” 表中 “DateOfBirth” 列的数据类型:</p>
+<p>ALTER TABLE Persons</p>
+<p>ALTER COLUMN DateOfBirth year</p>
+<p>  我们想要删除 “Person” 表中的 “DateOfBirth” 列</p>
+<p> ALTER TABLE Persons</p>
+<p>DROP COLUMN DateOfBirth</p>
+</blockquote>
+</li>
+<li><p>auto increment </p>
+<blockquote>
+<p> Auto-increment 会在新记录插入表中时生成一个唯一的数字。</p>
+<p> CREATE TABLE Persons</p>
+<p>(</p>
+<p>ID int NOT NULL <strong>AUTO_INCREMENT</strong>,</p>
+<p>LastName varchar(255) NOT NULL,</p>
+<p>FirstName varchar(255),</p>
+<p>Address varchar(255),</p>
+<p>City varchar(255),</p>
+<p><strong>PRIMARY KEY (ID)</strong></p>
+<p>) </p>
+<p>默认地，AUTO_INCREMENT 的开始值是 1，每条新记录递增 1。</p>
+<p>要让 AUTO_INCREMENT 序列以其他的值起始，请使用下面的 SQL 语法：</p>
+<p> ALTER TABLE Persons AUTO_INCREMENT=100    </p>
+</blockquote>
+</li>
+<li><p>Vews 视图</p>
+<blockquote>
+<p>视图是可视化的表。</p>
+<p>CREATE VIEW view_name AS</p>
+<p>SELECT column_name(s)</p>
+<p>FROM table_name</p>
+<p>WHERE condition;</p>
+<p>SELECT * FROM view_name ;  # 查询视图  </p>
+<p>更新视图</p>
+<p>CREATE OR REPLACE VIEW view_name AS</p>
+<p>SELECT column_name(s)</p>
+<p>FROM table_name</p>
+<p>WHERE condition；</p>
+<p>撤销视图</p>
+<p>DROP VIEW view_name</p>
+</blockquote>
+<p>​</p>
+</li>
+</ul>
+</blockquote>
+</blockquote>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><h4 id="MySQL-Date-函数"><a href="#MySQL-Date-函数" class="headerlink" title="MySQL Date 函数"></a><strong>MySQL Date 函数</strong></h4><p><img src="https://ww3.sinaimg.cn/large/006y8lVagy1fc92eu806xj30kn0cs0t2.jpg" alt></p>
+<p><img src="https://ww1.sinaimg.cn/large/006y8lVagy1fc92gniv6yj30d005z0sp.jpg" alt></p>
+<h4 id="NULL"><a href="#NULL" class="headerlink" title="NULL"></a>NULL</h4><p><img src="https://ww1.sinaimg.cn/large/006y8lVagy1fc92j1ggfqj30kn09awep.jpg" alt></p>
+<p><img src="https://ww3.sinaimg.cn/large/006y8lVagy1fc92l5nfrej30h602kmx1.jpg" alt></p>
+<h4 id="MySQL数据类型"><a href="#MySQL数据类型" class="headerlink" title="MySQL数据类型"></a>MySQL数据类型</h4><p><img src="https://ww4.sinaimg.cn/large/006y8lVagy1fc92nu2tofj30ko0diq38.jpg" alt></p>
+<p><img src="https://ww3.sinaimg.cn/large/006y8lVagy1fc92q3wclbj30hl02m746.jpg" alt></p>
+<p><img src="https://ww1.sinaimg.cn/large/006y8lVagy1fc92qcvc2qj30hp0jnt9t.jpg" alt></p>
+<p><img src="https://ww4.sinaimg.cn/large/006y8lVagy1fc92ql0r1nj30hk0gst9o.jpg" alt></p>
+<p><img src="https://ww2.sinaimg.cn/large/006y8lVagy1fc92qtg13rj30hl0gbjs4.jpg" alt></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2017/01/30/MYSQL数据库操作-1/" rel="prev" title="MySQL数据库操作(1)">
+      <i class="fa fa-chevron-left"></i> MySQL数据库操作(1)
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2017/01/31/MySQL中文乱码的解决方案/" rel="next" title="MySQL中文乱码的解决方案">
+      MySQL中文乱码的解决方案 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#SQL约束"><span class="nav-number">1.</span> <span class="nav-text">SQL约束</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#约束有如下："><span class="nav-number">1.1.</span> <span class="nav-text">约束有如下：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据类型"><span class="nav-number">2.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#MySQL-Date-函数"><span class="nav-number">2.1.</span> <span class="nav-text">MySQL Date 函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NULL"><span class="nav-number">2.2.</span> <span class="nav-text">NULL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MySQL数据类型"><span class="nav-number">2.3.</span> <span class="nav-text">MySQL数据类型</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Samuel</p>
+  <div class="site-description" itemprop="description">意义越是深远，过程就越是坎坷。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/samuel-tuo" title="GitHub → https://github.com/samuel-tuo" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:samuel.tuo@yahoo.com" title="E-Mail → mailto:samuel.tuo@yahoo.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Samuel</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
