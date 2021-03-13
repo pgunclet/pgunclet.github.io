@@ -16,6 +16,61 @@
       </tags>
   </entry>
   <entry>
+    <title>MySQL中文乱码的解决方案</title>
+    <url>/2017/01/31/MySQL%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<ul>
+<li>创建数据库的时候<a id="more"></a>
+</li>
+</ul>
+<blockquote>
+<p>create database  database_name </p>
+<p>character set ‘utf8’</p>
+<p>collate ‘utf8_general_ci’;</p>
+</blockquote>
+<ul>
+<li>建表的时候</li>
+</ul>
+<blockquote>
+<p>create table table_name(</p>
+<p>‘ID’ varchar(40) NOT NULL,</p>
+<p>‘UserID’ varchar(40) NOT NULL,</p>
+<p>) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
+</blockquote>
+<ul>
+<li>查看默认的编码格式</li>
+</ul>
+<blockquote>
+<p>show variables like “%char%”;</p>
+<p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fca2jq1inij30mu074q2x.jpg" alt></p>
+</blockquote>
+<ul>
+<li>python 操作MySQL时</li>
+</ul>
+<blockquote>
+<p>db = MySQLdb.connect(“localhost”,”root”,”xt801”,”Blogdb”,<strong>charset=’utf8’</strong>)</p>
+</blockquote>
+<ul>
+<li>已经建好数据库和表的处理方法</li>
+</ul>
+<blockquote>
+<p>mysql&gt; set names utf8;</p>
+<p>等同于同时设定如下：</p>
+<p>SET character_set_client=’utf8’;<br>SET character_set_connection=’utf8’;<br>SET character_set_results=’utf8’;  </p>
+</blockquote>
+<p>参考：</p>
+<ul>
+<li>[彻底解决mysql中文乱码的办法](<a href="http://www.pc6.com/infoview/Article_63586.html）" target="_blank" rel="noopener">http://www.pc6.com/infoview/Article_63586.html）</a></li>
+<li>[python操作mysql中文显示乱码的解决方法](<a href="http://www.jb51.net/article/56086.htm）" target="_blank" rel="noopener">http://www.jb51.net/article/56086.htm）</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL数据库操作(1)</title>
     <url>/2017/01/30/MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C-1/</url>
     <content><![CDATA[<p>MySQL数据库的基本用法和命令<br><a id="more"></a></p>
@@ -98,61 +153,6 @@
 <p>set names utf8;</p>
 </blockquote>
 </li>
-</ul>
-]]></content>
-      <categories>
-        <category>数据库</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL中文乱码的解决方案</title>
-    <url>/2017/01/31/MySQL%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<ul>
-<li>创建数据库的时候<a id="more"></a>
-</li>
-</ul>
-<blockquote>
-<p>create database  database_name </p>
-<p>character set ‘utf8’</p>
-<p>collate ‘utf8_general_ci’;</p>
-</blockquote>
-<ul>
-<li>建表的时候</li>
-</ul>
-<blockquote>
-<p>create table table_name(</p>
-<p>‘ID’ varchar(40) NOT NULL,</p>
-<p>‘UserID’ varchar(40) NOT NULL,</p>
-<p>) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
-</blockquote>
-<ul>
-<li>查看默认的编码格式</li>
-</ul>
-<blockquote>
-<p>show variables like “%char%”;</p>
-<p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fca2jq1inij30mu074q2x.jpg" alt></p>
-</blockquote>
-<ul>
-<li>python 操作MySQL时</li>
-</ul>
-<blockquote>
-<p>db = MySQLdb.connect(“localhost”,”root”,”xt801”,”Blogdb”,<strong>charset=’utf8’</strong>)</p>
-</blockquote>
-<ul>
-<li>已经建好数据库和表的处理方法</li>
-</ul>
-<blockquote>
-<p>mysql&gt; set names utf8;</p>
-<p>等同于同时设定如下：</p>
-<p>SET character_set_client=’utf8’;<br>SET character_set_connection=’utf8’;<br>SET character_set_results=’utf8’;  </p>
-</blockquote>
-<p>参考：</p>
-<ul>
-<li>[彻底解决mysql中文乱码的办法](<a href="http://www.pc6.com/infoview/Article_63586.html）" target="_blank" rel="noopener">http://www.pc6.com/infoview/Article_63586.html）</a></li>
-<li>[python操作mysql中文显示乱码的解决方法](<a href="http://www.jb51.net/article/56086.htm）" target="_blank" rel="noopener">http://www.jb51.net/article/56086.htm）</a></li>
 </ul>
 ]]></content>
       <categories>
@@ -539,6 +539,22 @@
       </tags>
   </entry>
   <entry>
+    <title>学会做不喜欢的事</title>
+    <url>/2017/07/03/%E5%AD%A6%E4%BC%9A%E5%81%9A%E4%B8%8D%E5%96%9C%E6%AC%A2%E7%9A%84%E4%BA%8B/</url>
+    <content><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote>
+<p>　　一直以来人们都在强调和倡导做自己喜欢的事，但在社会生活中常常遇到的情况是不得不做自己不喜欢的事。这样就导致人们在遇到困难和困境时主动会选择逃避，逃避的理由就是这不是我喜欢的事。做自己喜欢的事和不喜欢的事同样都能带来收获，做自己不喜欢的事会让自己知道为什么喜欢和不喜欢。　　　　　　　　　　　　　　　　　<br><a id="more"></a></p>
+</blockquote>
+<p>　　当孩子还没分清喜欢和不喜欢之间的的区别时，就已经被家庭和学校灌输了一种观念——自己能做得到并且在自己能力范围内的就是喜欢做的事。就这样当孩子遇到暂时的困难时，也会不自觉地暗示自己这可能是不喜欢做的事。没必要在上边浪费时间，而不是想尽一切办法去克服困难。逃避的越多导致路越走越窄，最终会活在自卑的阴影里。<br>　　现在大家的关注点都在某人成功了，取得了什么样的成绩以及拥有多少金钱。成功的人说点什么，就当做金玉良言。完全没有自己的思考和判断，分析一个人的失败可能比成功更有意义。 一个人成功的背后可能是几十次的失败，这几十次的失败帮助他排除了导致失败的许多因素。让他获得了之前不曾有的经验和能力，当再次碰到相同的困难时就可以从容应对。<br>　　当你学会不喜欢的事时，它可能在未来的某一天对你会有巨大的帮助。有时候你的付出在当下可能看不到结果，不要灰心。就和烧开水一样，当你把二三十度的凉水倒入壶中，打开天然气开始加热。当它加热到五十度的时候，水面的高度没有变化。当它加热到九十九度的时候，水边高度依然没有变化。继续加热到一百度时，水面突然沸腾。水面高度开始瞬间起伏波动。这就像我们做一件事时，刚开始即使你付出的再多也依然看不到回报，但我们要做的就是继续坚持努力。坚持到最后一刻水开始沸腾，所有的一切都是值得的。
+　　 </p>
+]]></content>
+      <categories>
+        <category>思考</category>
+      </categories>
+      <tags>
+        <tag>自我反思</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于开始记录时间的一些感悟</title>
     <url>/2020/07/12/%E5%85%B3%E4%BA%8E%E5%BC%80%E5%A7%8B%E8%AE%B0%E5%BD%95%E6%97%B6%E9%97%B4%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%82%9F/</url>
     <content><![CDATA[<h2 id="导语"><a href="#导语" class="headerlink" title="导语:"></a>导语:</h2><blockquote>
@@ -573,22 +589,6 @@
       </categories>
       <tags>
         <tag>记录时间</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学会做不喜欢的事</title>
-    <url>/2017/07/03/%E5%AD%A6%E4%BC%9A%E5%81%9A%E4%B8%8D%E5%96%9C%E6%AC%A2%E7%9A%84%E4%BA%8B/</url>
-    <content><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote>
-<p>　　一直以来人们都在强调和倡导做自己喜欢的事，但在社会生活中常常遇到的情况是不得不做自己不喜欢的事。这样就导致人们在遇到困难和困境时主动会选择逃避，逃避的理由就是这不是我喜欢的事。做自己喜欢的事和不喜欢的事同样都能带来收获，做自己不喜欢的事会让自己知道为什么喜欢和不喜欢。　　　　　　　　　　　　　　　　　<br><a id="more"></a></p>
-</blockquote>
-<p>　　当孩子还没分清喜欢和不喜欢之间的的区别时，就已经被家庭和学校灌输了一种观念——自己能做得到并且在自己能力范围内的就是喜欢做的事。就这样当孩子遇到暂时的困难时，也会不自觉地暗示自己这可能是不喜欢做的事。没必要在上边浪费时间，而不是想尽一切办法去克服困难。逃避的越多导致路越走越窄，最终会活在自卑的阴影里。<br>　　现在大家的关注点都在某人成功了，取得了什么样的成绩以及拥有多少金钱。成功的人说点什么，就当做金玉良言。完全没有自己的思考和判断，分析一个人的失败可能比成功更有意义。 一个人成功的背后可能是几十次的失败，这几十次的失败帮助他排除了导致失败的许多因素。让他获得了之前不曾有的经验和能力，当再次碰到相同的困难时就可以从容应对。<br>　　当你学会不喜欢的事时，它可能在未来的某一天对你会有巨大的帮助。有时候你的付出在当下可能看不到结果，不要灰心。就和烧开水一样，当你把二三十度的凉水倒入壶中，打开天然气开始加热。当它加热到五十度的时候，水面的高度没有变化。当它加热到九十九度的时候，水边高度依然没有变化。继续加热到一百度时，水面突然沸腾。水面高度开始瞬间起伏波动。这就像我们做一件事时，刚开始即使你付出的再多也依然看不到回报，但我们要做的就是继续坚持努力。坚持到最后一刻水开始沸腾，所有的一切都是值得的。
-　　 </p>
-]]></content>
-      <categories>
-        <category>思考</category>
-      </categories>
-      <tags>
-        <tag>自我反思</tag>
       </tags>
   </entry>
   <entry>
@@ -643,6 +643,19 @@
       </tags>
   </entry>
   <entry>
+    <title>观看陈平的跨学科思维课程的思考一</title>
+    <url>/2020/04/28/%E8%A7%82%E7%9C%8B%E9%99%88%E5%B9%B3%E7%9A%84%E8%B7%A8%E5%AD%A6%E7%A7%91%E6%80%9D%E7%BB%B4%E8%AF%BE%E7%A8%8B%E7%9A%84%E6%80%9D%E8%80%83%E4%B8%80/</url>
+    <content><![CDATA[<h2 id="导语"><a href="#导语" class="headerlink" title="导语"></a>导语</h2><p>​    现如今我们所处的时代已经不是一个知识匮乏的时代，人人通过手机和电脑就可以找到任何学科的学习资料。这是一个信息过剩的时代，我们处在一个信息沼泽里，如何才能不被信息淹没这是我们要思考的问题。这个时代每个人都是信息的制造者，每条信息的背后都承载着信息制造者的目的。而我们恰恰就是信息的接受者，选择怎样接受信息，信息同时也就怎样塑造了我们。<br><a id="more"></a></p>
+<h3 id="研究型教学方法和传统教学型教学方法对比"><a href="#研究型教学方法和传统教学型教学方法对比" class="headerlink" title="研究型教学方法和传统教学型教学方法对比"></a>研究型教学方法和传统教学型教学方法对比</h3><p>​    传统教学型的方法认为知识时按部就班积累起来的,先学习解决问题的必要知识,然后就可以去解决问题.事实是前面去发现探索知识的人根本就不知道知识在哪里,以及需要用哪些知识.都是后人把前人的经验总结成教科书,解决问题需要先学习基础知识,让学生觉得简单好上手.研究型教学方法源于西方德国的研习班或者研讨班,他们的研究方法是观察-&gt;问题-&gt;猜测-&gt;检验.观察并非指观察老师讲的案例符合老师所讲,而是观察非正常现象(正常现象就是符合你的经验和直觉).非常现象指的是现有理论不能解释的地方.同时也说明你到达了前沿阵地,没有人做过.观察后就要提出一个问题去挑战现有的理论.现有理论无论是自然科学还是社会科学从来没有唯一正确的理论,一直都是几个学派在那里竞争.竞争看问题的角度,谁能解释的更好.有了问题,下一步就是解决问题.解决问题的答案永远不止一个,尽可能的想有多少种解决问题的答案.然后怎样找出一个答案呢,就是通过猜.猜的过程体现了想象力丰富程度.猜测之后,就要通过几种办法去检验猜测.现有常用的方法就是通过数据检验,但数据不够时就用历史去检验.还不行时,就通过现场观察.</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>跨学科思维</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>用问题来认识自己</title>
     <url>/2017/01/23/%E7%94%A8%E9%97%AE%E9%A2%98%E6%9D%A5%E5%8F%8D%E6%80%9D%E4%B8%8B%E8%87%AA%E5%B7%B1/</url>
     <content><![CDATA[<p>有时候自己才是最陌生的，通过问题来深挖自己内心的真实想法。<br><a id="more"></a>   </p>
@@ -667,19 +680,6 @@
       </categories>
       <tags>
         <tag>自我反思</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>观看陈平的跨学科思维课程的思考一</title>
-    <url>/2020/04/28/%E8%A7%82%E7%9C%8B%E9%99%88%E5%B9%B3%E7%9A%84%E8%B7%A8%E5%AD%A6%E7%A7%91%E6%80%9D%E7%BB%B4%E8%AF%BE%E7%A8%8B%E7%9A%84%E6%80%9D%E8%80%83%E4%B8%80/</url>
-    <content><![CDATA[<h2 id="导语"><a href="#导语" class="headerlink" title="导语"></a>导语</h2><p>​    现如今我们所处的时代已经不是一个知识匮乏的时代，人人通过手机和电脑就可以找到任何学科的学习资料。这是一个信息过剩的时代，我们处在一个信息沼泽里，如何才能不被信息淹没这是我们要思考的问题。这个时代每个人都是信息的制造者，每条信息的背后都承载着信息制造者的目的。而我们恰恰就是信息的接受者，选择怎样接受信息，信息同时也就怎样塑造了我们。<br><a id="more"></a></p>
-<h3 id="研究型教学方法和传统教学型教学方法对比"><a href="#研究型教学方法和传统教学型教学方法对比" class="headerlink" title="研究型教学方法和传统教学型教学方法对比"></a>研究型教学方法和传统教学型教学方法对比</h3><p>​    传统教学型的方法认为知识时按部就班积累起来的,先学习解决问题的必要知识,然后就可以去解决问题.事实是前面去发现探索知识的人根本就不知道知识在哪里,以及需要用哪些知识.都是后人把前人的经验总结成教科书,解决问题需要先学习基础知识,让学生觉得简单好上手.研究型教学方法源于西方德国的研习班或者研讨班,他们的研究方法是观察-&gt;问题-&gt;猜测-&gt;检验.观察并非指观察老师讲的案例符合老师所讲,而是观察非正常现象(正常现象就是符合你的经验和直觉).非常现象指的是现有理论不能解释的地方.同时也说明你到达了前沿阵地,没有人做过.观察后就要提出一个问题去挑战现有的理论.现有理论无论是自然科学还是社会科学从来没有唯一正确的理论,一直都是几个学派在那里竞争.竞争看问题的角度,谁能解释的更好.有了问题,下一步就是解决问题.解决问题的答案永远不止一个,尽可能的想有多少种解决问题的答案.然后怎样找出一个答案呢,就是通过猜.猜的过程体现了想象力丰富程度.猜测之后,就要通过几种办法去检验猜测.现有常用的方法就是通过数据检验,但数据不够时就用历史去检验.还不行时,就通过现场观察.</p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>跨学科思维</tag>
       </tags>
   </entry>
   <entry>
