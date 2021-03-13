@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo &amp; next-----那些年走过的坑</title>
-    <url>/2017/01/23/Hexo-next-%E9%82%A3%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E5%9D%91/</url>
-    <content><![CDATA[<p>想要绕过hexo 和next 主题的一些坑么，别犹豫跟我来。<br><a id="more"></a></p>
-<h2 id="阅读全文功能"><a href="#阅读全文功能" class="headerlink" title="阅读全文功能"></a>阅读全文功能</h2><p><code>摘要</code><br><code>&lt;!-- more --&gt;</code><br><code>文章正文</code><br>这样就可以部分显示文字，点击阅读全文。</p>
-<h2 id="Next-主题分类页面和标签页面不显示"><a href="#Next-主题分类页面和标签页面不显示" class="headerlink" title="Next 主题分类页面和标签页面不显示"></a>Next 主题分类页面和标签页面不显示</h2><p>　　官网给出的添加分类页面和标签页面有点问题，按官方的方法始终分类页面和标签页面不显示，即使有文章也不行。  这个问题搞了一下午才搞定。有同样问题的小伙伴可以来看看。<br><img src="https://ww4.sinaimg.cn/large/006tKfTcgy1fc11496idzj30ku0iajrz.jpg" alt><br>　　其实把里面的”categories”变为categories和”tags”变为tags后，即可正常显示分类和标签页面。</p>
-]]></content>
-      <categories>
-        <category>Hexo博客</category>
-      </categories>
-      <tags>
-        <tag>阅读全文功能</tag>
-        <tag>标签和分类</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MySQL数据库操作(1)</title>
     <url>/2017/01/30/MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C-1/</url>
     <content><![CDATA[<p>MySQL数据库的基本用法和命令<br><a id="more"></a></p>
@@ -105,6 +90,21 @@
       </categories>
       <tags>
         <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo &amp; next-----那些年走过的坑</title>
+    <url>/2017/01/23/Hexo-next-%E9%82%A3%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E5%9D%91/</url>
+    <content><![CDATA[<p>想要绕过hexo 和next 主题的一些坑么，别犹豫跟我来。<br><a id="more"></a></p>
+<h2 id="阅读全文功能"><a href="#阅读全文功能" class="headerlink" title="阅读全文功能"></a>阅读全文功能</h2><p><code>摘要</code><br><code>&lt;!-- more --&gt;</code><br><code>文章正文</code><br>这样就可以部分显示文字，点击阅读全文。</p>
+<h2 id="Next-主题分类页面和标签页面不显示"><a href="#Next-主题分类页面和标签页面不显示" class="headerlink" title="Next 主题分类页面和标签页面不显示"></a>Next 主题分类页面和标签页面不显示</h2><p>　　官网给出的添加分类页面和标签页面有点问题，按官方的方法始终分类页面和标签页面不显示，即使有文章也不行。  这个问题搞了一下午才搞定。有同样问题的小伙伴可以来看看。<br><img src="https://ww4.sinaimg.cn/large/006tKfTcgy1fc11496idzj30ku0iajrz.jpg" alt><br>　　其实把里面的”categories”变为categories和”tags”变为tags后，即可正常显示分类和标签页面。</p>
+]]></content>
+      <categories>
+        <category>Hexo博客</category>
+      </categories>
+      <tags>
+        <tag>阅读全文功能</tag>
+        <tag>标签和分类</tag>
       </tags>
   </entry>
   <entry>
@@ -592,6 +592,23 @@
       </tags>
   </entry>
   <entry>
+    <title>最好的学习方法就是教</title>
+    <url>/2018/03/20/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E5%B0%B1%E6%98%AF%E6%95%99/</url>
+    <content><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote>
+<p>学习的目的是理解学习材料的本质，而不是充当知识搬运工的过程。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="学习不是充当资料搬运工的过程"><a href="#学习不是充当资料搬运工的过程" class="headerlink" title="学习不是充当资料搬运工的过程"></a>学习不是充当资料搬运工的过程</h2><p>　　大多数学习者的学习方法注重于做笔记，但大多是笔记知识重复书本或者是老师所讲的内容。而不是对学习内容的总结和检验，从而造成一味的记笔记但学习效果是面对问题却依然不会。笔记应该是合上书本，关闭电脑。然后开始写笔记，先通过大脑初步分类，然后在一类一类的概述和复述。将记忆模糊的或者还不理解的部分标注出来。笔记写完之后，在重新回到书本去弄懂这些知识。</p>
+<h2 id="笔记本就是你的学生，把你的所学传授给它"><a href="#笔记本就是你的学生，把你的所学传授给它" class="headerlink" title="笔记本就是你的学生，把你的所学传授给它"></a>笔记本就是你的学生，把你的所学传授给它</h2><p>　　检验你哪里学会了，哪里还不懂的办法就是给你一张白纸。把你知道的写下来，写不出来的就是还没掌握的部分。在写笔记的过程就是等于你在教一名新生的过程。如果你写不出来，自然也教不会。如果你能靠你自己写出来自然其中的思维逻辑你也是明明白白的。</p>
+]]></content>
+      <categories>
+        <category>思考</category>
+      </categories>
+      <tags>
+        <tag>自我反思</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>对于平衡的思考</title>
     <url>/2018/03/21/%E5%AF%B9%E4%BA%8E%E5%B9%B3%E8%A1%A1%E7%9A%84%E6%80%9D%E8%80%83/</url>
     <content><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote>
@@ -623,23 +640,6 @@
       </categories>
       <tags>
         <tag>《少有人走的路》</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>最好的学习方法就是教</title>
-    <url>/2018/03/20/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E5%B0%B1%E6%98%AF%E6%95%99/</url>
-    <content><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote>
-<p>学习的目的是理解学习材料的本质，而不是充当知识搬运工的过程。</p>
-</blockquote>
-<a id="more"></a>
-<h2 id="学习不是充当资料搬运工的过程"><a href="#学习不是充当资料搬运工的过程" class="headerlink" title="学习不是充当资料搬运工的过程"></a>学习不是充当资料搬运工的过程</h2><p>　　大多数学习者的学习方法注重于做笔记，但大多是笔记知识重复书本或者是老师所讲的内容。而不是对学习内容的总结和检验，从而造成一味的记笔记但学习效果是面对问题却依然不会。笔记应该是合上书本，关闭电脑。然后开始写笔记，先通过大脑初步分类，然后在一类一类的概述和复述。将记忆模糊的或者还不理解的部分标注出来。笔记写完之后，在重新回到书本去弄懂这些知识。</p>
-<h2 id="笔记本就是你的学生，把你的所学传授给它"><a href="#笔记本就是你的学生，把你的所学传授给它" class="headerlink" title="笔记本就是你的学生，把你的所学传授给它"></a>笔记本就是你的学生，把你的所学传授给它</h2><p>　　检验你哪里学会了，哪里还不懂的办法就是给你一张白纸。把你知道的写下来，写不出来的就是还没掌握的部分。在写笔记的过程就是等于你在教一名新生的过程。如果你写不出来，自然也教不会。如果你能靠你自己写出来自然其中的思维逻辑你也是明明白白的。</p>
-]]></content>
-      <categories>
-        <category>思考</category>
-      </categories>
-      <tags>
-        <tag>自我反思</tag>
       </tags>
   </entry>
   <entry>
