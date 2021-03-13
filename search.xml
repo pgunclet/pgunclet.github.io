@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo &amp; next-----那些年走过的坑</title>
+    <url>/2017/01/23/Hexo-next-%E9%82%A3%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E5%9D%91/</url>
+    <content><![CDATA[<p>想要绕过hexo 和next 主题的一些坑么，别犹豫跟我来。<br><a id="more"></a></p>
+<h2 id="阅读全文功能"><a href="#阅读全文功能" class="headerlink" title="阅读全文功能"></a>阅读全文功能</h2><p><code>摘要</code><br><code>&lt;!-- more --&gt;</code><br><code>文章正文</code><br>这样就可以部分显示文字，点击阅读全文。</p>
+<h2 id="Next-主题分类页面和标签页面不显示"><a href="#Next-主题分类页面和标签页面不显示" class="headerlink" title="Next 主题分类页面和标签页面不显示"></a>Next 主题分类页面和标签页面不显示</h2><p>　　官网给出的添加分类页面和标签页面有点问题，按官方的方法始终分类页面和标签页面不显示，即使有文章也不行。  这个问题搞了一下午才搞定。有同样问题的小伙伴可以来看看。<br><img src="https://ww4.sinaimg.cn/large/006tKfTcgy1fc11496idzj30ku0iajrz.jpg" alt><br>　　其实把里面的”categories”变为categories和”tags”变为tags后，即可正常显示分类和标签页面。</p>
+]]></content>
+      <categories>
+        <category>Hexo博客</category>
+      </categories>
+      <tags>
+        <tag>阅读全文功能</tag>
+        <tag>标签和分类</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL数据库操作(1)</title>
     <url>/2017/01/30/MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C-1/</url>
     <content><![CDATA[<p>MySQL数据库的基本用法和命令<br><a id="more"></a></p>
@@ -93,18 +108,58 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo &amp; next-----那些年走过的坑</title>
-    <url>/2017/01/23/Hexo-next-%E9%82%A3%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E5%9D%91/</url>
-    <content><![CDATA[<p>想要绕过hexo 和next 主题的一些坑么，别犹豫跟我来。<br><a id="more"></a></p>
-<h2 id="阅读全文功能"><a href="#阅读全文功能" class="headerlink" title="阅读全文功能"></a>阅读全文功能</h2><p><code>摘要</code><br><code>&lt;!-- more --&gt;</code><br><code>文章正文</code><br>这样就可以部分显示文字，点击阅读全文。</p>
-<h2 id="Next-主题分类页面和标签页面不显示"><a href="#Next-主题分类页面和标签页面不显示" class="headerlink" title="Next 主题分类页面和标签页面不显示"></a>Next 主题分类页面和标签页面不显示</h2><p>　　官网给出的添加分类页面和标签页面有点问题，按官方的方法始终分类页面和标签页面不显示，即使有文章也不行。  这个问题搞了一下午才搞定。有同样问题的小伙伴可以来看看。<br><img src="https://ww4.sinaimg.cn/large/006tKfTcgy1fc11496idzj30ku0iajrz.jpg" alt><br>　　其实把里面的”categories”变为categories和”tags”变为tags后，即可正常显示分类和标签页面。</p>
+    <title>MySQL中文乱码的解决方案</title>
+    <url>/2017/01/31/MySQL%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<ul>
+<li>创建数据库的时候<a id="more"></a>
+</li>
+</ul>
+<blockquote>
+<p>create database  database_name </p>
+<p>character set ‘utf8’</p>
+<p>collate ‘utf8_general_ci’;</p>
+</blockquote>
+<ul>
+<li>建表的时候</li>
+</ul>
+<blockquote>
+<p>create table table_name(</p>
+<p>‘ID’ varchar(40) NOT NULL,</p>
+<p>‘UserID’ varchar(40) NOT NULL,</p>
+<p>) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
+</blockquote>
+<ul>
+<li>查看默认的编码格式</li>
+</ul>
+<blockquote>
+<p>show variables like “%char%”;</p>
+<p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fca2jq1inij30mu074q2x.jpg" alt></p>
+</blockquote>
+<ul>
+<li>python 操作MySQL时</li>
+</ul>
+<blockquote>
+<p>db = MySQLdb.connect(“localhost”,”root”,”xt801”,”Blogdb”,<strong>charset=’utf8’</strong>)</p>
+</blockquote>
+<ul>
+<li>已经建好数据库和表的处理方法</li>
+</ul>
+<blockquote>
+<p>mysql&gt; set names utf8;</p>
+<p>等同于同时设定如下：</p>
+<p>SET character_set_client=’utf8’;<br>SET character_set_connection=’utf8’;<br>SET character_set_results=’utf8’;  </p>
+</blockquote>
+<p>参考：</p>
+<ul>
+<li>[彻底解决mysql中文乱码的办法](<a href="http://www.pc6.com/infoview/Article_63586.html）" target="_blank" rel="noopener">http://www.pc6.com/infoview/Article_63586.html）</a></li>
+<li>[python操作mysql中文显示乱码的解决方法](<a href="http://www.jb51.net/article/56086.htm）" target="_blank" rel="noopener">http://www.jb51.net/article/56086.htm）</a></li>
+</ul>
 ]]></content>
       <categories>
-        <category>Hexo博客</category>
+        <category>数据库</category>
       </categories>
       <tags>
-        <tag>阅读全文功能</tag>
-        <tag>标签和分类</tag>
+        <tag>MySQL</tag>
       </tags>
   </entry>
   <entry>
@@ -454,76 +509,6 @@
       </tags>
   </entry>
   <entry>
-    <title>MySQL中文乱码的解决方案</title>
-    <url>/2017/01/31/MySQL%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<ul>
-<li>创建数据库的时候<a id="more"></a>
-</li>
-</ul>
-<blockquote>
-<p>create database  database_name </p>
-<p>character set ‘utf8’</p>
-<p>collate ‘utf8_general_ci’;</p>
-</blockquote>
-<ul>
-<li>建表的时候</li>
-</ul>
-<blockquote>
-<p>create table table_name(</p>
-<p>‘ID’ varchar(40) NOT NULL,</p>
-<p>‘UserID’ varchar(40) NOT NULL,</p>
-<p>) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
-</blockquote>
-<ul>
-<li>查看默认的编码格式</li>
-</ul>
-<blockquote>
-<p>show variables like “%char%”;</p>
-<p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fca2jq1inij30mu074q2x.jpg" alt></p>
-</blockquote>
-<ul>
-<li>python 操作MySQL时</li>
-</ul>
-<blockquote>
-<p>db = MySQLdb.connect(“localhost”,”root”,”xt801”,”Blogdb”,<strong>charset=’utf8’</strong>)</p>
-</blockquote>
-<ul>
-<li>已经建好数据库和表的处理方法</li>
-</ul>
-<blockquote>
-<p>mysql&gt; set names utf8;</p>
-<p>等同于同时设定如下：</p>
-<p>SET character_set_client=’utf8’;<br>SET character_set_connection=’utf8’;<br>SET character_set_results=’utf8’;  </p>
-</blockquote>
-<p>参考：</p>
-<ul>
-<li>[彻底解决mysql中文乱码的办法](<a href="http://www.pc6.com/infoview/Article_63586.html）" target="_blank" rel="noopener">http://www.pc6.com/infoview/Article_63586.html）</a></li>
-<li>[python操作mysql中文显示乱码的解决方法](<a href="http://www.jb51.net/article/56086.htm）" target="_blank" rel="noopener">http://www.jb51.net/article/56086.htm）</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>数据库</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人活着的意义</title>
-    <url>/2017/09/06/%E4%BA%BA%E6%B4%BB%E7%9D%80%E7%9A%84%E6%84%8F%E4%B9%89/</url>
-    <content><![CDATA[<p>不知道你们会不会老想人活着的意义，反正这个问题已经困扰了我很久。中间我也通过阅读书籍得到了一些答案，但这些答案并不让我信服。<br><a id="more"></a></p>
-<h2 id="人活着没有任何意义"><a href="#人活着没有任何意义" class="headerlink" title="人活着没有任何意义"></a>人活着没有任何意义</h2><p>　　从一哲学书中作者总结出结论人生没有任何意义，依据是当你死了的时候什么也留不住，那一瞬间什么都烟消云散。如果不假思索的话听上去好像说的也很对，普通人死了也就周围的亲戚朋友知道。等这一波人都逐个去世的时候，也就真没人记得你了。最多公墓里有一块石碑上刻着你的名字。但仔细想想从最初好像就没给<strong>意义</strong>这个词去下定义，什么叫有意义和什么叫没意义，导致很难寻找出来答案。</p>
-<h2 id="人活着有意义，意义都是自己寻找的"><a href="#人活着有意义，意义都是自己寻找的" class="headerlink" title="人活着有意义，意义都是自己寻找的"></a>人活着有意义，意义都是自己寻找的</h2><p>　　从另一本心理书籍上作者得出来另外一种结论：人活着有意义，但这个意义每个人都不一样需要你去寻找。在我个人来看这和第一个答案没什么区别，没有给出来一个实质的答案。这样的答案要用现在互联网上的术语叫<strong>标题党</strong>。但左思右想之后就觉得说的有道理，活着的意义需要每个人都一样么。这个问题到底需要一个普世的答案，还是需要与个体相适应的答案。</p>
-<h2 id="关于我对人活着意义的理解"><a href="#关于我对人活着意义的理解" class="headerlink" title="关于我对人活着意义的理解"></a>关于我对人活着意义的理解</h2><p>　　对于意义的理解，时间跨度我划分为长期和短期。长期指从古人类到现代人类，短期是指人的一生。首先从长期说起，在《自私的基因》一书中，作者阐明一个观点:人之所以会繁衍生息，是因为基因有自私的目的想要永生，就把人类作为一个寄生躯壳。如果抛开个人意识和思想，确实人类代代相传的也就是那不变的23对染色体。基因以自私的目的设计出的有性繁衍和无性繁衍来获得永生。为了让自己的那套基因永存于世，也是费尽心机。看来我们早已从祖先那里获得“传家宝”了。如果这样来看人活着的意义就是延续基因的存在。确实这个意义也很重要。但当人类开始有了物品可以记录自己时，这时个体的一生就产生意义了。尤其是当纸张发明出来时，人们可以记录自己的发现、经验和技能等等。准确的来说人类快速发展的原因就是因为我们有了可以准确记录和读取数据的储存器。我们经历了从绳结，到壁画，到纸张，到磁带，这是记录数据准确性的提升；从到磁盘，到硬盘，到固态硬盘，这是存储量和读取速度的提升。正是有了记录数据的储存器的出现，个体的人可以把自己的一生方方面面的数据储存起来，供下一代人来参照和使用。我们现在使用的一本教科书可能就包含了几十代人的一生。书中的一个定理的发现可能就经历了几代人时光。所以从这个意义上来说，人活着的目的就是接受前人的馈赠，再添加点留给后人。因此这样就可以定义短期人活着的意义了，在前人留的纸张上涂上自己的痕迹。<br>　　想到这里我就一下豁然开朗，不过也是够笨的到了这个年纪才想明白。希望现在还不晚，去实现人活着的意义。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>《自私的基因》</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>为什么我总是很焦虑</title>
     <url>/2020/10/22/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E6%80%BB%E6%98%AF%E5%BE%88%E7%84%A6%E8%99%91/</url>
     <content><![CDATA[<p>我一直活的很焦虑，总是害怕自己就这样默默无闻地把自己的一生就这样过完了。但我不这样过，又能怎么样呢。每当看到朋友圈里的朋友晒成功照时，我便每每陷入焦虑。为什么我还是一事无成，为什么我总是慢人一步。除了对自己的责怪，并没有什么持续的实际行动。这样的循环一直持续了很久，我觉得是该正视这个问题了。<br><a id="more"></a></p>
@@ -533,6 +518,22 @@
 ]]></content>
       <categories>
         <category>个人感悟</category>
+      </categories>
+      <tags>
+        <tag>自我反思</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学会做不喜欢的事</title>
+    <url>/2017/07/03/%E5%AD%A6%E4%BC%9A%E5%81%9A%E4%B8%8D%E5%96%9C%E6%AC%A2%E7%9A%84%E4%BA%8B/</url>
+    <content><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote>
+<p>　　一直以来人们都在强调和倡导做自己喜欢的事，但在社会生活中常常遇到的情况是不得不做自己不喜欢的事。这样就导致人们在遇到困难和困境时主动会选择逃避，逃避的理由就是这不是我喜欢的事。做自己喜欢的事和不喜欢的事同样都能带来收获，做自己不喜欢的事会让自己知道为什么喜欢和不喜欢。　　　　　　　　　　　　　　　　　<br><a id="more"></a></p>
+</blockquote>
+<p>　　当孩子还没分清喜欢和不喜欢之间的的区别时，就已经被家庭和学校灌输了一种观念——自己能做得到并且在自己能力范围内的就是喜欢做的事。就这样当孩子遇到暂时的困难时，也会不自觉地暗示自己这可能是不喜欢做的事。没必要在上边浪费时间，而不是想尽一切办法去克服困难。逃避的越多导致路越走越窄，最终会活在自卑的阴影里。<br>　　现在大家的关注点都在某人成功了，取得了什么样的成绩以及拥有多少金钱。成功的人说点什么，就当做金玉良言。完全没有自己的思考和判断，分析一个人的失败可能比成功更有意义。 一个人成功的背后可能是几十次的失败，这几十次的失败帮助他排除了导致失败的许多因素。让他获得了之前不曾有的经验和能力，当再次碰到相同的困难时就可以从容应对。<br>　　当你学会不喜欢的事时，它可能在未来的某一天对你会有巨大的帮助。有时候你的付出在当下可能看不到结果，不要灰心。就和烧开水一样，当你把二三十度的凉水倒入壶中，打开天然气开始加热。当它加热到五十度的时候，水面的高度没有变化。当它加热到九十九度的时候，水边高度依然没有变化。继续加热到一百度时，水面突然沸腾。水面高度开始瞬间起伏波动。这就像我们做一件事时，刚开始即使你付出的再多也依然看不到回报，但我们要做的就是继续坚持努力。坚持到最后一刻水开始沸腾，所有的一切都是值得的。
+　　 </p>
+]]></content>
+      <categories>
+        <category>思考</category>
       </categories>
       <tags>
         <tag>自我反思</tag>
@@ -576,6 +577,21 @@
       </tags>
   </entry>
   <entry>
+    <title>人活着的意义</title>
+    <url>/2017/09/06/%E4%BA%BA%E6%B4%BB%E7%9D%80%E7%9A%84%E6%84%8F%E4%B9%89/</url>
+    <content><![CDATA[<p>不知道你们会不会老想人活着的意义，反正这个问题已经困扰了我很久。中间我也通过阅读书籍得到了一些答案，但这些答案并不让我信服。<br><a id="more"></a></p>
+<h2 id="人活着没有任何意义"><a href="#人活着没有任何意义" class="headerlink" title="人活着没有任何意义"></a>人活着没有任何意义</h2><p>　　从一哲学书中作者总结出结论人生没有任何意义，依据是当你死了的时候什么也留不住，那一瞬间什么都烟消云散。如果不假思索的话听上去好像说的也很对，普通人死了也就周围的亲戚朋友知道。等这一波人都逐个去世的时候，也就真没人记得你了。最多公墓里有一块石碑上刻着你的名字。但仔细想想从最初好像就没给<strong>意义</strong>这个词去下定义，什么叫有意义和什么叫没意义，导致很难寻找出来答案。</p>
+<h2 id="人活着有意义，意义都是自己寻找的"><a href="#人活着有意义，意义都是自己寻找的" class="headerlink" title="人活着有意义，意义都是自己寻找的"></a>人活着有意义，意义都是自己寻找的</h2><p>　　从另一本心理书籍上作者得出来另外一种结论：人活着有意义，但这个意义每个人都不一样需要你去寻找。在我个人来看这和第一个答案没什么区别，没有给出来一个实质的答案。这样的答案要用现在互联网上的术语叫<strong>标题党</strong>。但左思右想之后就觉得说的有道理，活着的意义需要每个人都一样么。这个问题到底需要一个普世的答案，还是需要与个体相适应的答案。</p>
+<h2 id="关于我对人活着意义的理解"><a href="#关于我对人活着意义的理解" class="headerlink" title="关于我对人活着意义的理解"></a>关于我对人活着意义的理解</h2><p>　　对于意义的理解，时间跨度我划分为长期和短期。长期指从古人类到现代人类，短期是指人的一生。首先从长期说起，在《自私的基因》一书中，作者阐明一个观点:人之所以会繁衍生息，是因为基因有自私的目的想要永生，就把人类作为一个寄生躯壳。如果抛开个人意识和思想，确实人类代代相传的也就是那不变的23对染色体。基因以自私的目的设计出的有性繁衍和无性繁衍来获得永生。为了让自己的那套基因永存于世，也是费尽心机。看来我们早已从祖先那里获得“传家宝”了。如果这样来看人活着的意义就是延续基因的存在。确实这个意义也很重要。但当人类开始有了物品可以记录自己时，这时个体的一生就产生意义了。尤其是当纸张发明出来时，人们可以记录自己的发现、经验和技能等等。准确的来说人类快速发展的原因就是因为我们有了可以准确记录和读取数据的储存器。我们经历了从绳结，到壁画，到纸张，到磁带，这是记录数据准确性的提升；从到磁盘，到硬盘，到固态硬盘，这是存储量和读取速度的提升。正是有了记录数据的储存器的出现，个体的人可以把自己的一生方方面面的数据储存起来，供下一代人来参照和使用。我们现在使用的一本教科书可能就包含了几十代人的一生。书中的一个定理的发现可能就经历了几代人时光。所以从这个意义上来说，人活着的目的就是接受前人的馈赠，再添加点留给后人。因此这样就可以定义短期人活着的意义了，在前人留的纸张上涂上自己的痕迹。<br>　　想到这里我就一下豁然开朗，不过也是够笨的到了这个年纪才想明白。希望现在还不晚，去实现人活着的意义。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>《自私的基因》</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>对于平衡的思考</title>
     <url>/2018/03/21/%E5%AF%B9%E4%BA%8E%E5%B9%B3%E8%A1%A1%E7%9A%84%E6%80%9D%E8%80%83/</url>
     <content><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote>
@@ -589,22 +605,6 @@
       </categories>
       <tags>
         <tag>平衡</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学会做不喜欢的事</title>
-    <url>/2017/07/03/%E5%AD%A6%E4%BC%9A%E5%81%9A%E4%B8%8D%E5%96%9C%E6%AC%A2%E7%9A%84%E4%BA%8B/</url>
-    <content><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote>
-<p>　　一直以来人们都在强调和倡导做自己喜欢的事，但在社会生活中常常遇到的情况是不得不做自己不喜欢的事。这样就导致人们在遇到困难和困境时主动会选择逃避，逃避的理由就是这不是我喜欢的事。做自己喜欢的事和不喜欢的事同样都能带来收获，做自己不喜欢的事会让自己知道为什么喜欢和不喜欢。　　　　　　　　　　　　　　　　　<br><a id="more"></a></p>
-</blockquote>
-<p>　　当孩子还没分清喜欢和不喜欢之间的的区别时，就已经被家庭和学校灌输了一种观念——自己能做得到并且在自己能力范围内的就是喜欢做的事。就这样当孩子遇到暂时的困难时，也会不自觉地暗示自己这可能是不喜欢做的事。没必要在上边浪费时间，而不是想尽一切办法去克服困难。逃避的越多导致路越走越窄，最终会活在自卑的阴影里。<br>　　现在大家的关注点都在某人成功了，取得了什么样的成绩以及拥有多少金钱。成功的人说点什么，就当做金玉良言。完全没有自己的思考和判断，分析一个人的失败可能比成功更有意义。 一个人成功的背后可能是几十次的失败，这几十次的失败帮助他排除了导致失败的许多因素。让他获得了之前不曾有的经验和能力，当再次碰到相同的困难时就可以从容应对。<br>　　当你学会不喜欢的事时，它可能在未来的某一天对你会有巨大的帮助。有时候你的付出在当下可能看不到结果，不要灰心。就和烧开水一样，当你把二三十度的凉水倒入壶中，打开天然气开始加热。当它加热到五十度的时候，水面的高度没有变化。当它加热到九十九度的时候，水边高度依然没有变化。继续加热到一百度时，水面突然沸腾。水面高度开始瞬间起伏波动。这就像我们做一件事时，刚开始即使你付出的再多也依然看不到回报，但我们要做的就是继续坚持努力。坚持到最后一刻水开始沸腾，所有的一切都是值得的。
-　　 </p>
-]]></content>
-      <categories>
-        <category>思考</category>
-      </categories>
-      <tags>
-        <tag>自我反思</tag>
       </tags>
   </entry>
   <entry>
