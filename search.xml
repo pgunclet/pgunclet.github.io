@@ -1,702 +1,359 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Hexo &amp; next-----那些年走过的坑</title>
-    <url>/2017/01/23/Hexo-next-%E9%82%A3%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E5%9D%91/</url>
-    <content><![CDATA[<p>想要绕过hexo 和next 主题的一些坑么，别犹豫跟我来。<br><a id="more"></a></p>
-<h2 id="阅读全文功能"><a href="#阅读全文功能" class="headerlink" title="阅读全文功能"></a>阅读全文功能</h2><p><code>摘要</code><br><code>&lt;!-- more --&gt;</code><br><code>文章正文</code><br>这样就可以部分显示文字，点击阅读全文。</p>
-<h2 id="Next-主题分类页面和标签页面不显示"><a href="#Next-主题分类页面和标签页面不显示" class="headerlink" title="Next 主题分类页面和标签页面不显示"></a>Next 主题分类页面和标签页面不显示</h2><p>　　官网给出的添加分类页面和标签页面有点问题，按官方的方法始终分类页面和标签页面不显示，即使有文章也不行。  这个问题搞了一下午才搞定。有同样问题的小伙伴可以来看看。<br><img src="https://ww4.sinaimg.cn/large/006tKfTcgy1fc11496idzj30ku0iajrz.jpg" alt><br>　　其实把里面的”categories”变为categories和”tags”变为tags后，即可正常显示分类和标签页面。</p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>为什么我总是很焦虑</title>
+      <link href="2020/10/22/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E6%80%BB%E6%98%AF%E5%BE%88%E7%84%A6%E8%99%91/"/>
+      <url>2020/10/22/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E6%80%BB%E6%98%AF%E5%BE%88%E7%84%A6%E8%99%91/</url>
+      
+        <content type="html"><![CDATA[<p>我一直活的很焦虑，总是害怕自己就这样默默无闻地把自己的一生就这样过完了。但我不这样过，又能怎么样呢。每当看到朋友圈里的朋友晒成功照时，我便每每陷入焦虑。为什么我还是一事无成，为什么我总是慢人一步。除了对自己的责怪，并没有什么持续的实际行动。这样的循环一直持续了很久，我觉得是该正视这个问题了。<br><a id="more"></a></p><h2 id="自己的焦虑来自哪里"><a href="#自己的焦虑来自哪里" class="headerlink" title="自己的焦虑来自哪里"></a>自己的焦虑来自哪里</h2><p>自己的焦虑来自想得而不可得的欲望。在这个快速变化的社会中，我无时无刻都在将自己与同龄人在比较。总觉得自己步子慢，跟不上。总想快起来，总想在做之后马上看到效果。这就导致我尝试了很多事情，但都没有坚持下来。其实这些事但凡我能坚持一件，那么五年的坚持应该或多或少有些小成就。最大的问题可能在于使我养成做事之前不断的在犹豫，投入时间能否获得相应的收益。一直犹豫不前，即使做了在短期内看不到结果就很难坚持，基本上就半途而废了。</p><h2 id="为什么会产生焦虑"><a href="#为什么会产生焦虑" class="headerlink" title="为什么会产生焦虑"></a>为什么会产生焦虑</h2><p>焦虑也可能就是因为我没有自己的核心价值观，总拿别人的价值评判标准当作自己的尺子，所以会造成想得而不可得。如果我有自己的一套价值体系，那么当我面对选择时就不会再犹豫。当我选择后看不到结果时，仍能坚持努力。不会因他人的闲言碎语而改变自己的选择。也不会为了和他人合群而选择背离原本的自己。我的焦虑本质上源于自己的心口不一，价值观不固定造成选择上的犹豫。就像我手里握着不同标准的尺子，量出来的结果各不相同。</p><h2 id="我该怎么解决"><a href="#我该怎么解决" class="headerlink" title="我该怎么解决"></a>我该怎么解决</h2><p>首先应确立自己的价值观，这是一套固定的体系。当你碰到没有标准答案的选择时，选择的依据就是你的价值观。一旦选择就去坚持你的选择。100%践行自己的价值观的时候，是最容易的时候。不需要你犹豫不决，只管坚持做就行了。不然你会瞻前顾后，焦虑就此来了。</p>]]></content>
+      
+      
       <categories>
-        <category>Hexo博客</category>
+          
+          <category> 个人感悟 </category>
+          
       </categories>
-      <tags>
-        <tag>阅读全文功能</tag>
-        <tag>标签和分类</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL数据库操作(1)</title>
-    <url>/2017/01/30/MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C-1/</url>
-    <content><![CDATA[<p>MySQL数据库的基本用法和命令<br><a id="more"></a></p>
-<h2 id="MYSQL数据库操作-一"><a href="#MYSQL数据库操作-一" class="headerlink" title="MYSQL数据库操作(一)"></a>MYSQL数据库操作(一)</h2><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><ul>
-<li><p>1.<strong>终端登录数据库</strong></p>
-<blockquote>
-<p>mysql -u root -p</p>
-</blockquote>
-</li>
-<li><p>2.<strong>创建数据库&amp;删除数据库</strong></p>
-<blockquote>
-<p>create database database_name;</p>
-</blockquote>
-<blockquote>
-<p>drop database database_name;</p>
-</blockquote>
-</li>
-<li><p>3.<strong>创建数据表&amp;删除数据表</strong></p>
-<blockquote>
-<p>create table table_name;</p>
-</blockquote>
-<blockquote>
-<p>drop table table_name;     # 删除整张表</p>
-</blockquote>
-<blockquote>
-<p>truncate table table_name; #只删除表内数据，保留表</p>
-</blockquote>
-</li>
-<li><p>4.<strong>查看数据库&amp;数据表</strong></p>
-<blockquote>
-<p>show databases;</p>
-</blockquote>
-<blockquote>
-<p>show tables;</p>
-</blockquote>
-</li>
-<li><p>5.<strong>向表中插入数据两种方式</strong></p>
-<blockquote>
-<p>insert into table_name values (value1,value2,value3,…);</p>
-</blockquote>
-<blockquote>
-<p>insert into table_name values ( column1,column2,…….) value (value1,value2,value3………);</p>
-</blockquote>
-</li>
-<li><p>6.<strong>删除数据</strong></p>
-<blockquote>
-<p>delete from table_name where some_clumn = some_value;</p>
-<p>如果没有where子句规则，则删除所有记录</p>
-</blockquote>
-</li>
-<li><p>7.<strong>更新记录</strong></p>
-<blockquote>
-<p>update table_name set column1=value1,column2=value2,….where some_column=some_value;</p>
-</blockquote>
-</li>
-<li><p>8.<strong>查询记录</strong></p>
-<blockquote>
-<p>查询具体的列</p>
-<p>select column_name, column_name from table_name;</p>
-</blockquote>
-<blockquote>
-<p>查看整张表</p>
-<p>select * from table_name;</p>
-</blockquote>
-<blockquote>
-<p>查询时列值不重复</p>
-<p>select distunct column_name,column_name from table_name;</p>
-</blockquote>
-<blockquote>
-<p>过滤查询</p>
-<p>select column_name,column_name from table_name where column_name operator value;</p>
-<p>and &amp;or 用于过滤查询</p>
-<p>select coloumn_name ,  from table_name where  条件1 and/or 条件2；</p>
-<p>orderby 查询并排序</p>
-<p>select column_name,column_name from table_name order by column_name,column_name ASC|DESC; (默认升序，DESC降序)</p>
-</blockquote>
-</li>
-<li><p>9.设置标的字符集为utf8</p>
-<blockquote>
-<p>set names utf8;</p>
-</blockquote>
-</li>
-</ul>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 自我反思 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于开始记录时间的一些感悟</title>
+      <link href="2020/07/12/%E5%85%B3%E4%BA%8E%E5%BC%80%E5%A7%8B%E8%AE%B0%E5%BD%95%E6%97%B6%E9%97%B4%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%82%9F/"/>
+      <url>2020/07/12/%E5%85%B3%E4%BA%8E%E5%BC%80%E5%A7%8B%E8%AE%B0%E5%BD%95%E6%97%B6%E9%97%B4%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%82%9F/</url>
+      
+        <content type="html"><![CDATA[<h2 id="导语"><a href="#导语" class="headerlink" title="导语:"></a>导语:</h2><blockquote><p>大概在6月中旬的时候，我开始反思为什么我总是花了时间还是没干成一件像样的事。像样的事到底指什么，对于我来说是把感兴趣的事能做到影响他人甚至是能帮助他人。以这样的标准来说，确实是像样的事都没干成。我开始寻找原因，并记录我花费在每件事上的时间。<br><a id="more"></a> </p><h3 id="想象和现实差距"><a href="#想象和现实差距" class="headerlink" title="想象和现实差距"></a>想象和现实差距</h3><p>我一度以为世界上最难的事可能是说服我那固执的老妈，让她跳出自己固有的思维圈。可在我记录时间后，我发现世界上最难的事是坚持每天做一件事，并持续不间断。我计划在编程上花费的时间是每天8个番茄，每个番茄半小时，共计4小时。我开始制定计划的时候，觉得4小时不多。除了工作，我还有大把的时间去学习。我主要制定了两项任务其中之一就是学习编程4小时，另一项是每天锻炼身体1小时。6月20日- 7月12日共计23天，编程达到4小时及以上的天数共计6天，锻炼身体达到1小时共计18天。编程花费时间共计48小时，锻炼身体共计18小时。这就是截止到目前的成绩。</p><h3 id="在记录时间过程中的发现"><a href="#在记录时间过程中的发现" class="headerlink" title="在记录时间过程中的发现"></a>在记录时间过程中的发现</h3><ul><li><p>前一天做好第二天的计划很重要</p><p>以前没有做计划的习惯，第二天手头上有事就做事，没事基本就荒废一天，等到晚上开始反思时间都去哪了，这样的循环持续了很久。在我开始学习计划任务时，第二天我过的很充实，我一项一项的完成任务。井井有条，就像自动化工厂一样永远知道自己该做什么和不该做什么。</p></li><li><p>不要等到什么都齐了才开始行动</p><p>以前老觉得别人能干成事，都是因为不缺东西。现在我知道，真正想干成事的人从有这个想法开始，就已经开始行动了。行动后遇到的困难一个一个去解决。把所有时间都投入到解决问题中去。就像一句话说的那样当一件事你有时间都没去做，没时间的时候你更不可能会去做。因为这件事就不在你的优先级上。</p></li><li><p>在学中做，在做中学</p><p>在前期的学习中，我太注重进度。一味的只是看书和例题，并没有花时间重现例题以及课后练习。等我一本书完成了一半，脑子里记住的东西却不多。这时候我就知道我该改变了。认真重现例题并仔细思考课后题，通过练习来巩固所学习的知识点。一步一个脚印，踏实下去。</p></li><li><p>目标不是一蹴而就，就能达成的。</p><p>生活中的各种目标不是一蹴而就达成的，而是定一个目标，然后一点一点的去接近这个目标。生活就是不断出现问题和解决问题的过程。生活中没有一劳永逸的办法。有的只是耐心，对于出现的问题，逐一去解决。</p></li><li><p>坚持自己的选择，100%去执行不要犹豫</p><p>在已经制定了每日计划的前提下，遵照计划执行是最容易的事。不用我们在浪费大脑的精力去纠结到底做还是不做。每次100%的去执行自己事先的计划或者决定是最优的，也是最省时间的。逐渐养成习惯去100%执行自己的决定，而不是在开始时犹豫不决。每当我们开始行动时，犹豫的另一半自己总是在找各种理由，提出各种疑问来阻止你行动，就在你犹豫的时候，时间也在悄悄地溜走。</p></li><li><p>开始做任何一件事务必要超过20小时后，再下结论</p><p>我猜测可能是由于人的基因驱使，人们很难坚持做短期看不到利益得事。正因为如此，我刚开始学习编程的时候没有静下心来，一本书学了几天，没感到有实质性的获得的时候。我会把原因归结于太难，或者自己不适合这门语言。从来没想到是自己投入的时间太少，就想得到产出。在我开始计划时间时，Java编程的时间投入到超过20小时后，我体会到了解决课后习题的快感。我碰一时解决不了的问题，不再妄自菲薄的怪自己，或者天赋不够。而是在浏览器上搜索解决办法，在白纸上不停的尝试解决办法。在编程上花费48小时后，我开始逐渐对编程有了自己的理解，编程是解决问题的工具。练习就是为了掌握编程工具的熟练度。然而解决问题的核心还是人，如果你没有找出解决问题的方法。即使你会再多编程语言也没什么用。编程是按照解决问题的方法去实现方法，从而解决问题。就本质而言，编程工具就是在解决问题中不断的重复，不断的试错。而这些本应该由人来操作的重复动作被机器替代了。从而就把人解放出来，人开始专心投入到找到更快、更好、更新的问题解决方案。</p></li></ul></blockquote><blockquote></blockquote>]]></content>
+      
+      
       <categories>
-        <category>数据库</category>
+          
+          <category> 思考 </category>
+          
       </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL中文乱码的解决方案</title>
-    <url>/2017/01/31/MySQL%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<ul>
-<li>创建数据库的时候<a id="more"></a>
-</li>
-</ul>
-<blockquote>
-<p>create database  database_name </p>
-<p>character set ‘utf8’</p>
-<p>collate ‘utf8_general_ci’;</p>
-</blockquote>
-<ul>
-<li>建表的时候</li>
-</ul>
-<blockquote>
-<p>create table table_name(</p>
-<p>‘ID’ varchar(40) NOT NULL,</p>
-<p>‘UserID’ varchar(40) NOT NULL,</p>
-<p>) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
-</blockquote>
-<ul>
-<li>查看默认的编码格式</li>
-</ul>
-<blockquote>
-<p>show variables like “%char%”;</p>
-<p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fca2jq1inij30mu074q2x.jpg" alt></p>
-</blockquote>
-<ul>
-<li>python 操作MySQL时</li>
-</ul>
-<blockquote>
-<p>db = MySQLdb.connect(“localhost”,”root”,”xt801”,”Blogdb”,<strong>charset=’utf8’</strong>)</p>
-</blockquote>
-<ul>
-<li>已经建好数据库和表的处理方法</li>
-</ul>
-<blockquote>
-<p>mysql&gt; set names utf8;</p>
-<p>等同于同时设定如下：</p>
-<p>SET character_set_client=’utf8’;<br>SET character_set_connection=’utf8’;<br>SET character_set_results=’utf8’;  </p>
-</blockquote>
-<p>参考：</p>
-<ul>
-<li>[彻底解决mysql中文乱码的办法](<a href="http://www.pc6.com/infoview/Article_63586.html）" target="_blank" rel="noopener">http://www.pc6.com/infoview/Article_63586.html）</a></li>
-<li>[python操作mysql中文显示乱码的解决方法](<a href="http://www.jb51.net/article/56086.htm）" target="_blank" rel="noopener">http://www.jb51.net/article/56086.htm）</a></li>
-</ul>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 记录时间 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>观看陈平的跨学科思维课程的思考一</title>
+      <link href="2020/04/28/%E8%A7%82%E7%9C%8B%E9%99%88%E5%B9%B3%E7%9A%84%E8%B7%A8%E5%AD%A6%E7%A7%91%E6%80%9D%E7%BB%B4%E8%AF%BE%E7%A8%8B%E7%9A%84%E6%80%9D%E8%80%83%E4%B8%80/"/>
+      <url>2020/04/28/%E8%A7%82%E7%9C%8B%E9%99%88%E5%B9%B3%E7%9A%84%E8%B7%A8%E5%AD%A6%E7%A7%91%E6%80%9D%E7%BB%B4%E8%AF%BE%E7%A8%8B%E7%9A%84%E6%80%9D%E8%80%83%E4%B8%80/</url>
+      
+        <content type="html"><![CDATA[<h2 id="导语"><a href="#导语" class="headerlink" title="导语"></a>导语</h2><p>​    现如今我们所处的时代已经不是一个知识匮乏的时代，人人通过手机和电脑就可以找到任何学科的学习资料。这是一个信息过剩的时代，我们处在一个信息沼泽里，如何才能不被信息淹没这是我们要思考的问题。这个时代每个人都是信息的制造者，每条信息的背后都承载着信息制造者的目的。而我们恰恰就是信息的接受者，选择怎样接受信息，信息同时也就怎样塑造了我们。<br><a id="more"></a></p><h3 id="研究型教学方法和传统教学型教学方法对比"><a href="#研究型教学方法和传统教学型教学方法对比" class="headerlink" title="研究型教学方法和传统教学型教学方法对比"></a>研究型教学方法和传统教学型教学方法对比</h3><p>​    传统教学型的方法认为知识时按部就班积累起来的,先学习解决问题的必要知识,然后就可以去解决问题.事实是前面去发现探索知识的人根本就不知道知识在哪里,以及需要用哪些知识.都是后人把前人的经验总结成教科书,解决问题需要先学习基础知识,让学生觉得简单好上手.研究型教学方法源于西方德国的研习班或者研讨班,他们的研究方法是观察-&gt;问题-&gt;猜测-&gt;检验.观察并非指观察老师讲的案例符合老师所讲,而是观察非正常现象(正常现象就是符合你的经验和直觉).非常现象指的是现有理论不能解释的地方.同时也说明你到达了前沿阵地,没有人做过.观察后就要提出一个问题去挑战现有的理论.现有理论无论是自然科学还是社会科学从来没有唯一正确的理论,一直都是几个学派在那里竞争.竞争看问题的角度,谁能解释的更好.有了问题,下一步就是解决问题.解决问题的答案永远不止一个,尽可能的想有多少种解决问题的答案.然后怎样找出一个答案呢,就是通过猜.猜的过程体现了想象力丰富程度.猜测之后,就要通过几种办法去检验猜测.现有常用的方法就是通过数据检验,但数据不够时就用历史去检验.还不行时,就通过现场观察.</p>]]></content>
+      
+      
       <categories>
-        <category>数据库</category>
+          
+          <category> 学习笔记 </category>
+          
       </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL数据库操作(2)</title>
-    <url>/2017/01/30/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C-2/</url>
-    <content><![CDATA[<p>MySQL 数据库高级操作<br><a id="more"></a></p>
-<ul>
-<li>selet top 选取前面第n条记录</li>
-</ul>
-<blockquote>
-<p>slect column_name from table_name limit number;</p>
-</blockquote>
-<ul>
-<li>like 操作符</li>
-</ul>
-<blockquote>
-<p>select column_names from table_name where column_name like pattern;    #parten 为通配符 例如匹配Google    like ‘%oo%’</p>
-</blockquote>
-<ul>
-<li>in 操作符</li>
-</ul>
-<blockquote>
-<p>select column_names from table_name where column_name in (valuel1, valuel2,……);</p>
-</blockquote>
-<ul>
-<li>between 操作符</li>
-</ul>
-<blockquote>
-<p>select column_name() from table_name where column_name between valuel and value2;</p>
-</blockquote>
-<ul>
-<li>别名语法</li>
-</ul>
-<blockquote>
-<p>select colum_name as alias_name from table_name; #给列加别名</p>
-<p>select column_names from table_name as alias_name; #给表加别名</p>
-</blockquote>
-<ul>
-<li>join 表连接</li>
-</ul>
-<blockquote>
-<p>select table1.column_name, table2. column_name, ….. from table1, inser join table2,…… on table1.name = table2.name, table2.name = table3.name;</p>
-<ul>
-<li>INNER JOIN：如果表中有至少一个匹配，则返回行</li>
-<li>LEFT JOIN：即使右表中没有匹配，也从左表返回所有的行</li>
-<li>RIGHT JOIN：即使左表中没有匹配，也从右表返回所有的行   </li>
-<li>FULL JOIN：只要其中一个表中存在匹配，则返回行</li>
-</ul>
-</blockquote>
-<ul>
-<li>union 语法</li>
-</ul>
-<blockquote>
-<p>union</p>
-</blockquote>
-<blockquote>
-<p>select column_names from table1 </p>
-<p>union select column_names from table2; # 选取所有不同值</p>
-</blockquote>
-<blockquote>
-<p>union all</p>
-</blockquote>
-<blockquote>
-<p>select column_names from table1 </p>
-<p>union all  select column)names from table2;# 包括相同值</p>
-</blockquote>
-<ul>
-<li>select into 复制表或列插入新表</li>
-</ul>
-<blockquote>
-<p>select * into newtable from talbe1; #复制所有列到新表</p>
-<p>select  column_names into  newtable from table1;#复制新列到新表</p>
-</blockquote>
-<ul>
-<li>insert into select 从一个表中复制数据，把数据插入到一个已存在的表中</li>
-</ul>
-<blockquote>
-<p>insert into table2 select * from table1; #将表一中的所有列插入到表二</p>
-</blockquote>
-<blockquote>
-<p>insert into table2 (column_names) </p>
-<p>select column_names from table1;#将表一选中的列插入到表二中</p>
-</blockquote>
-<ul>
-<li>create database </li>
-</ul>
-<blockquote>
-<p>create database database_name;</p>
-</blockquote>
-<ul>
-<li>create table</li>
-</ul>
-<blockquote>
-<p>create table table_name(column_name1 data_type(size),</p>
-<p>​                                             column_name1 data_type(size),</p>
-<p>​                                              column_name1 data_type(size),</p>
-<p>​                                             ……..);</p>
-</blockquote>
-<h3 id="SQL约束"><a href="#SQL约束" class="headerlink" title="SQL约束"></a>SQL约束</h3><p>SQL 约束用于规定表中的数据规则。如果存在违反约束的数据行为，行为会被约束终止。</p>
-<ul>
-<li>SQL CREATE TABLE + CONSTRAINT 语法</li>
-</ul>
-<blockquote>
-<p>create table table_name(</p>
-<p> column_name1  data_type(size)  constraint_name,</p>
-<p> column_name1  data_type(size)   constraint_name,</p>
-<p>column_name1  data_type(size)    constraint_name,</p>
-<p>……………..</p>
-<p>); </p>
-<h4 id="约束有如下："><a href="#约束有如下：" class="headerlink" title="约束有如下："></a><strong>约束有如下：</strong></h4><ul>
-<li>not null       ——-  某列不能储存null值 </li>
-</ul>
-<blockquote>
-<p>create table Persons(</p>
-<p>P_Id int not null,#强制LastName列不接受NULL值</p>
-<p>LastName varchar(255) not null,# 如果不向字段添加值，就无法插入新记录或者更新记录</p>
-<p>FirstName varchar(255),</p>
-<p>Address varchar(255),</p>
-<p>City varchar(255))</p>
-</blockquote>
-<ul>
-<li>unique        ——-   某列的每行必须有唯一值</li>
-</ul>
-<blockquote>
-<p>CREATE TABLE Persons<br>(<br>P_Id int NOT NULL,<br>LastName varchar(255) NOT NULL,<br>FirstName varchar(255),<br>Address varchar(255),<br>City varchar(255),<br><strong>UNIQUE (P_Id，LastName)</strong>)    # 约束唯一标识数据库中的每条记录</p>
-</blockquote>
-<ul>
-<li>primary key   ——-  not null and unique</li>
-</ul>
-<blockquote>
-<p> <strong>PRIMARY KEY</strong> 约束唯一标识数据库表中的每条记录</p>
-<ul>
-<li><p>主键必须包含唯一的值</p>
-</li>
-<li><p>主键列不能包含 NULL 值</p>
-</li>
-<li><p>每个表都应该有一个主键，并且每个表只能有一个主键   </p>
-<blockquote>
-<p> CREATE TABLE Persons</p>
-<p>(</p>
-<p>P_Id int NOT NULL,</p>
-<p>LastName varchar(255) NOT NULL,</p>
-<p>FirstName varchar(255),</p>
-<p>Address varchar(255),</p>
-<p>City varchar(255),</p>
-<p><strong>PRIMARY KEY (P_Id)</strong></p>
-<p>)</p>
-<p>或者</p>
-<p>CREATE TABLE Persons<br>(<br>P_Id int <strong>NOT NULL PRIMARY KEY</strong>,<br>LastName varchar(255) NOT NULL,<br>FirstName varchar(255),<br>Address varchar(255),<br>City varchar(255)<br>)  </p>
-</blockquote>
-<ul>
-<li><p>当表已被创建时，如需在 “P_Id” 列创建 PRIMARY KEY 约束，请使用下面的 SQL：</p>
-<blockquote>
-<p>ALTER TABLE Persons</p>
-<p>ADD PRIMARY KEY (P_Id)  </p>
-<p>如果您使用 ALTER TABLE 语句添加主键，必须把主键列声明为不包含 NULL 值（在表首次创建时）</p>
-</blockquote>
-</li>
-<li><p>撤销PRIMARY KEY 约束</p>
-<blockquote>
-<p>  ALTER TABLE Persons<br>  DROP PRIMARY KEY</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<ul>
-<li><p>foreign key    ——– 一个表中的数据匹配拎一个表中的值的参照完整性</p>
-<blockquote>
-<p><img src="https://ww4.sinaimg.cn/large/006y8lValy1fc91a91kr7j30kt0fu0t2.jpg" alt> CREATE TABLE Orders</p>
-<p>(</p>
-<p>O_Id int NOT NULL,</p>
-<p>OrderNo int NOT NULL,</p>
-<p>P_Id int,</p>
-<p><strong>PRIMARY KEY (O_Id)</strong>,</p>
-<p><strong>FOREIGN KEY (P_Id) REFERENCES Persons(P_Id)</strong></p>
-<p>)</p>
-<p>一个表中的 FOREIGN KEY 指向另一个表中的 PRIMARY KEY</p>
-<p>  FOREIGN KEY 约束用于预防破坏表之间连接的行为。</p>
-<p> FOREIGN KEY 约束也能防止非法数据插入外键列，因为它必须是   它指向的那个表中的值之一。 </p>
-</blockquote>
-</li>
-<li><p>check            ———  保证列中的值符合指定的条件</p>
-<blockquote>
-<p> CHECK 约束用于限制列中的值的范围。</p>
-<blockquote>
-<p>CREATE TABLE Persons</p>
-</blockquote>
-<blockquote>
-<p>(</p>
-</blockquote>
-<blockquote>
-<p>P_Id int NOT NULL,</p>
-</blockquote>
-<blockquote>
-<p>LastName varchar(255) NOT NULL,</p>
-</blockquote>
-<blockquote>
-<p>FirstName varchar(255),</p>
-</blockquote>
-<blockquote>
-<p>Address varchar(255),</p>
-</blockquote>
-<blockquote>
-<p>City varchar(255),</p>
-</blockquote>
-<blockquote>
-<p>CHECK (P_Id&gt;0))</p>
-</blockquote>
-<p> 当表已被创建时，如需在 “P_Id” 列创建 CHECK 约束，请使用下面的 SQL;</p>
-<blockquote>
-<p>ALTER TABLE Persons</p>
-</blockquote>
-<blockquote>
-<p>ADD CHECK (P_Id&gt;0)</p>
-</blockquote>
-<p>  如需命名 CHECK 约束，并定义多个列的 CHECK 约束，请使用下面的 SQL 语法：</p>
-<blockquote>
-<p>ALTER TABLE Persons</p>
-</blockquote>
-<blockquote>
-<p>ADD CONSTRAINT chk_Person CHECK (P_Id&gt;0 AND City=’Sandnes’)</p>
-</blockquote>
-<p> 如需撤销 CHECK 约束，请使用下面的 SQL ;</p>
-<blockquote>
-<p>ALTER TABLE Persons</p>
-</blockquote>
-<blockquote>
-<p> DROP CHECK chk_Person   </p>
-</blockquote>
-</blockquote>
-</li>
-<li><p>default         ———-规定没有给出列赋值的默认值</p>
-</li>
-</ul>
-<blockquote>
-<p>  下面的 SQL 在 “Persons” 表创建时在 “City” 列上创建 DEFAULT 约束：</p>
-<blockquote>
-<p> CREATE TABLE Persons</p>
-<p>(</p>
-<p>P_Id int NOT NULL,</p>
-<p>LastName varchar(255) NOT NULL,</p>
-<p>FirstName varchar(255),</p>
-<p>Address varchar(255),</p>
-<p>City varchar(255) <strong>DEFAULT ‘Sandnes’</strong></p>
-<p>)</p>
-<p> 当表已被创建时，如需在 “City” 列创建 DEFAULT 约束，请使用下面的 SQL;</p>
-<blockquote>
-<p>ALTER TABLE Persons</p>
-<p>ALTER City SET DEFAULT ‘SANDNES’ </p>
-</blockquote>
-<p>如需撤销 DEFAULT 约束，请使用下面的 SQL：</p>
-<blockquote>
-<p>ALTER TABLE Persons</p>
-<p>ALTER City DROP DEFAULT </p>
-</blockquote>
-</blockquote>
-<ul>
-<li><p>create index </p>
-<blockquote>
-<p>您可以在表中创建索引，以便更加快速高效地查询数据。</p>
-<p>用户无法看到索引，它们只能被用来加速搜索/查询。</p>
-<p> CREATE INDEX index_name</p>
-<p>ON table_name (column_name)</p>
-<p>DROP INDEX 语句用于删除表中的索引</p>
-<p>  DROP INDEX table_name.index_name</p>
-</blockquote>
-</li>
-<li><p>drop </p>
-<blockquote>
-<p> DROP TABLE table_name #   DROP TABLE 语句用于删除表。</p>
-<p>DROP DATABASE database_name # DROP DATABASE 语句用于删除数据库。</p>
-<p>   TRUNCATE TABLE table_name # 如果我们仅仅需要删除表内的数据，但并不删除表本身   </p>
-</blockquote>
-</li>
-<li><p>alter </p>
-<blockquote>
-<p> 如需在表中添加列，请使用下面的语法:</p>
-<p> ALTER TABLE table_name</p>
-<p>ADD column_name datatype</p>
-<p>  如需删除表中的列，请使用下面的语法</p>
-<p> ALTER TABLE table_name</p>
-<p>DROP COLUMN column_name</p>
-<p><img src="https://ww4.sinaimg.cn/large/006y8lVagy1fc9211eaqwj30ko04pglj.jpg" alt></p>
-<p>我们想要改变 “Persons” 表中 “DateOfBirth” 列的数据类型:</p>
-<p>ALTER TABLE Persons</p>
-<p>ALTER COLUMN DateOfBirth year</p>
-<p>  我们想要删除 “Person” 表中的 “DateOfBirth” 列</p>
-<p> ALTER TABLE Persons</p>
-<p>DROP COLUMN DateOfBirth</p>
-</blockquote>
-</li>
-<li><p>auto increment </p>
-<blockquote>
-<p> Auto-increment 会在新记录插入表中时生成一个唯一的数字。</p>
-<p> CREATE TABLE Persons</p>
-<p>(</p>
-<p>ID int NOT NULL <strong>AUTO_INCREMENT</strong>,</p>
-<p>LastName varchar(255) NOT NULL,</p>
-<p>FirstName varchar(255),</p>
-<p>Address varchar(255),</p>
-<p>City varchar(255),</p>
-<p><strong>PRIMARY KEY (ID)</strong></p>
-<p>) </p>
-<p>默认地，AUTO_INCREMENT 的开始值是 1，每条新记录递增 1。</p>
-<p>要让 AUTO_INCREMENT 序列以其他的值起始，请使用下面的 SQL 语法：</p>
-<p> ALTER TABLE Persons AUTO_INCREMENT=100    </p>
-</blockquote>
-</li>
-<li><p>Vews 视图</p>
-<blockquote>
-<p>视图是可视化的表。</p>
-<p>CREATE VIEW view_name AS</p>
-<p>SELECT column_name(s)</p>
-<p>FROM table_name</p>
-<p>WHERE condition;</p>
-<p>SELECT * FROM view_name ;  # 查询视图  </p>
-<p>更新视图</p>
-<p>CREATE OR REPLACE VIEW view_name AS</p>
-<p>SELECT column_name(s)</p>
-<p>FROM table_name</p>
-<p>WHERE condition；</p>
-<p>撤销视图</p>
-<p>DROP VIEW view_name</p>
-</blockquote>
-<p>​</p>
-</li>
-</ul>
-</blockquote>
-</blockquote>
-<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><h4 id="MySQL-Date-函数"><a href="#MySQL-Date-函数" class="headerlink" title="MySQL Date 函数"></a><strong>MySQL Date 函数</strong></h4><p><img src="https://ww3.sinaimg.cn/large/006y8lVagy1fc92eu806xj30kn0cs0t2.jpg" alt></p>
-<p><img src="https://ww1.sinaimg.cn/large/006y8lVagy1fc92gniv6yj30d005z0sp.jpg" alt></p>
-<h4 id="NULL"><a href="#NULL" class="headerlink" title="NULL"></a>NULL</h4><p><img src="https://ww1.sinaimg.cn/large/006y8lVagy1fc92j1ggfqj30kn09awep.jpg" alt></p>
-<p><img src="https://ww3.sinaimg.cn/large/006y8lVagy1fc92l5nfrej30h602kmx1.jpg" alt></p>
-<h4 id="MySQL数据类型"><a href="#MySQL数据类型" class="headerlink" title="MySQL数据类型"></a>MySQL数据类型</h4><p><img src="https://ww4.sinaimg.cn/large/006y8lVagy1fc92nu2tofj30ko0diq38.jpg" alt></p>
-<p><img src="https://ww3.sinaimg.cn/large/006y8lVagy1fc92q3wclbj30hl02m746.jpg" alt></p>
-<p><img src="https://ww1.sinaimg.cn/large/006y8lVagy1fc92qcvc2qj30hp0jnt9t.jpg" alt></p>
-<p><img src="https://ww4.sinaimg.cn/large/006y8lVagy1fc92ql0r1nj30hk0gst9o.jpg" alt></p>
-<p><img src="https://ww2.sinaimg.cn/large/006y8lVagy1fc92qtg13rj30hl0gbjs4.jpg" alt></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 跨学科思维 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>阻止行动的到底是什么</title>
+      <link href="2018/11/17/%E9%98%BB%E6%AD%A2%E8%A1%8C%E5%8A%A8%E7%9A%84%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88/"/>
+      <url>2018/11/17/%E9%98%BB%E6%AD%A2%E8%A1%8C%E5%8A%A8%E7%9A%84%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88/</url>
+      
+        <content type="html"><![CDATA[<h2 id="导语"><a href="#导语" class="headerlink" title="导语:"></a>导语:</h2><blockquote><p>总会发现这样的情况:当脑海里有一个想法想去实现时,总有很多对立面浮现在脑海中.让我逐渐失去了信心,最终它止步于此.到底是什么阻挡了它前进的脚步? 这引起了我的好奇心, 去揭开脑海中对立面的真实面目.<br><a id="more"></a>   </p></blockquote><h3 id="无形的界限"><a href="#无形的界限" class="headerlink" title="无形的界限"></a>无形的界限</h3><p>​      大脑喜欢用已有模式去解释未知的事, 所以当你看到一张脸即使她还没说话但我们已经对她有了大致的判断.这样模式会减少脑力的消耗,帮助人类保存精力.同样的事发生在我们所接受的学校教育、家庭教育和各种媒体教育.毫无疑问的是我们在获取知识的同时,也在不断的塑造自我的界限.学校及家庭教育中有相当一部分是规定我们的行为界限,但都未讲明原因.学生时代只要越界就会遭受到老师或者家长的惩罚.学生时代之所以不去越界的原因是会遭到惩罚而不是理解规则制定的目的. 所以渐渐的学生就适应了这种思维模式,一味的去遵守规则和保证自己永远在界内.这就是学生时代形成无形的界限伴随我们一身.</p><h3 id="怎样去改变"><a href="#怎样去改变" class="headerlink" title="怎样去改变"></a>怎样去改变</h3><p>从根本上来说之所以会形成这样的思维模式,是因为环境的造就以及自己未意识到这样的过程.要改变这样的状况,第一点就是要形成质疑思维.接受知识或者观点时,首先要质疑;然后去求证;最后去选择性接受.也就是我们要改变之前的思维方式,不意味的把教条当作权威当作真理.只有检验过的结论,才值得我们去接受.以上所说综合起来就是形成批判性思维.</p><h3 id="不要怕跟别人不一样"><a href="#不要怕跟别人不一样" class="headerlink" title="不要怕跟别人不一样"></a>不要怕跟别人不一样</h3><p>要有一种长期眼光和成长性思维去看待自己的成长,不要惧怕和别人不一样而怀疑自己是错的.探索和行动的过程恰恰是你拓宽边界的方法.在每一次小的尝试之后,你都会获得一些感悟或者推翻你之前对于自己所下的结论.就是要这样积累小的尝试,一段时间后你就会重新审视自己.重新调整自己认知世界的地图,拓宽地图的边界.变得乐于行动,通过行动去寻求想要的答案.</p>]]></content>
+      
+      
       <categories>
-        <category>数据库</category>
+          
+          <category> 思考 </category>
+          
       </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为什么我总是很焦虑</title>
-    <url>/2020/10/22/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E6%80%BB%E6%98%AF%E5%BE%88%E7%84%A6%E8%99%91/</url>
-    <content><![CDATA[<p>我一直活的很焦虑，总是害怕自己就这样默默无闻地把自己的一生就这样过完了。但我不这样过，又能怎么样呢。每当看到朋友圈里的朋友晒成功照时，我便每每陷入焦虑。为什么我还是一事无成，为什么我总是慢人一步。除了对自己的责怪，并没有什么持续的实际行动。这样的循环一直持续了很久，我觉得是该正视这个问题了。<br><a id="more"></a></p>
-<h2 id="自己的焦虑来自哪里"><a href="#自己的焦虑来自哪里" class="headerlink" title="自己的焦虑来自哪里"></a>自己的焦虑来自哪里</h2><p>自己的焦虑来自想得而不可得的欲望。在这个快速变化的社会中，我无时无刻都在将自己与同龄人在比较。总觉得自己步子慢，跟不上。总想快起来，总想在做之后马上看到效果。这就导致我尝试了很多事情，但都没有坚持下来。其实这些事但凡我能坚持一件，那么五年的坚持应该或多或少有些小成就。最大的问题可能在于使我养成做事之前不断的在犹豫，投入时间能否获得相应的收益。一直犹豫不前，即使做了在短期内看不到结果就很难坚持，基本上就半途而废了。</p>
-<h2 id="为什么会产生焦虑"><a href="#为什么会产生焦虑" class="headerlink" title="为什么会产生焦虑"></a>为什么会产生焦虑</h2><p>焦虑也可能就是因为我没有自己的核心价值观，总拿别人的价值评判标准当作自己的尺子，所以会造成想得而不可得。如果我有自己的一套价值体系，那么当我面对选择时就不会再犹豫。当我选择后看不到结果时，仍能坚持努力。不会因他人的闲言碎语而改变自己的选择。也不会为了和他人合群而选择背离原本的自己。我的焦虑本质上源于自己的心口不一，价值观不固定造成选择上的犹豫。就像我手里握着不同标准的尺子，量出来的结果各不相同。</p>
-<h2 id="我该怎么解决"><a href="#我该怎么解决" class="headerlink" title="我该怎么解决"></a>我该怎么解决</h2><p>首先应确立自己的价值观，这是一套固定的体系。当你碰到没有标准答案的选择时，选择的依据就是你的价值观。一旦选择就去坚持你的选择。100%践行自己的价值观的时候，是最容易的时候。不需要你犹豫不决，只管坚持做就行了。不然你会瞻前顾后，焦虑就此来了。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 行动 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>对于平衡的思考</title>
+      <link href="2018/03/21/%E5%AF%B9%E4%BA%8E%E5%B9%B3%E8%A1%A1%E7%9A%84%E6%80%9D%E8%80%83/"/>
+      <url>2018/03/21/%E5%AF%B9%E4%BA%8E%E5%B9%B3%E8%A1%A1%E7%9A%84%E6%80%9D%E8%80%83/</url>
+      
+        <content type="html"><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote><p>生活就是一场平衡的游戏。当你处于平衡点之上时要懂得怎样回归到平衡点，当你处于平衡点之下时不断尝试怎样达到平衡点。<br><a id="more"></a><br>  之所以会想到这个话题是今天突然在脑海里浮现出价格波动规律.我们都从课本上学过价格波动规律-价格围绕商品的价值上下波动.价值波动规律就是一种动态平衡,似乎这显而易见.但当价格规律落到人类的头上,人们就无法显而易见了.总觉得静止的平衡才是平衡,其他都是不好的.</p></blockquote><h3 id="认识动态平衡"><a href="#认识动态平衡" class="headerlink" title="认识动态平衡"></a>认识动态平衡</h3><p>  找到平衡才能使自己从容不迫的面对生活,面对熟悉的脸,面对陌生的脸.人们只关注某人在某一刻的生活状况,无论好坏都给出他们的评价.鲜有人能拿出一段时间或者一个周期来比较.统计学大家都知道的,样本对于统计学很关键.如果样本的数量少了,根据样本数据得出的结论就会与真实情况有很大出入.类似的,当吃瓜群众看你开宝马来的时候一个评价,骑三轮走的时候又一个相反的评价.对于这种噪音要学会过滤.要学会以周期眼光来看待和思考问题的方式即动态平衡.不要为一时的走运而沾沾自喜,不要为了一时的失败而止步不前.时刻谨记自己处在周期之中,说不定下一刻一切归零重新开始.</p><h3 id="拥有周期心态才能更好的把握生活"><a href="#拥有周期心态才能更好的把握生活" class="headerlink" title="拥有周期心态才能更好的把握生活"></a>拥有周期心态才能更好的把握生活</h3><p>  人往往处在困境的时候越喜欢给自己制造不良的紧张心态,让自己越来越对自己没信心.往往处在有利的情景中骄傲自满,过于自信.所以要懂得自己所在的周期,利用周期来平衡自己的心态.用更好的心态来迎接变化.</p>]]></content>
+      
+      
       <categories>
-        <category>个人感悟</category>
+          
+          <category> 思考 </category>
+          
       </categories>
-      <tags>
-        <tag>自我反思</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人活着的意义</title>
-    <url>/2017/09/06/%E4%BA%BA%E6%B4%BB%E7%9D%80%E7%9A%84%E6%84%8F%E4%B9%89/</url>
-    <content><![CDATA[<p>不知道你们会不会老想人活着的意义，反正这个问题已经困扰了我很久。中间我也通过阅读书籍得到了一些答案，但这些答案并不让我信服。<br><a id="more"></a></p>
-<h2 id="人活着没有任何意义"><a href="#人活着没有任何意义" class="headerlink" title="人活着没有任何意义"></a>人活着没有任何意义</h2><p>　　从一哲学书中作者总结出结论人生没有任何意义，依据是当你死了的时候什么也留不住，那一瞬间什么都烟消云散。如果不假思索的话听上去好像说的也很对，普通人死了也就周围的亲戚朋友知道。等这一波人都逐个去世的时候，也就真没人记得你了。最多公墓里有一块石碑上刻着你的名字。但仔细想想从最初好像就没给<strong>意义</strong>这个词去下定义，什么叫有意义和什么叫没意义，导致很难寻找出来答案。</p>
-<h2 id="人活着有意义，意义都是自己寻找的"><a href="#人活着有意义，意义都是自己寻找的" class="headerlink" title="人活着有意义，意义都是自己寻找的"></a>人活着有意义，意义都是自己寻找的</h2><p>　　从另一本心理书籍上作者得出来另外一种结论：人活着有意义，但这个意义每个人都不一样需要你去寻找。在我个人来看这和第一个答案没什么区别，没有给出来一个实质的答案。这样的答案要用现在互联网上的术语叫<strong>标题党</strong>。但左思右想之后就觉得说的有道理，活着的意义需要每个人都一样么。这个问题到底需要一个普世的答案，还是需要与个体相适应的答案。</p>
-<h2 id="关于我对人活着意义的理解"><a href="#关于我对人活着意义的理解" class="headerlink" title="关于我对人活着意义的理解"></a>关于我对人活着意义的理解</h2><p>　　对于意义的理解，时间跨度我划分为长期和短期。长期指从古人类到现代人类，短期是指人的一生。首先从长期说起，在《自私的基因》一书中，作者阐明一个观点:人之所以会繁衍生息，是因为基因有自私的目的想要永生，就把人类作为一个寄生躯壳。如果抛开个人意识和思想，确实人类代代相传的也就是那不变的23对染色体。基因以自私的目的设计出的有性繁衍和无性繁衍来获得永生。为了让自己的那套基因永存于世，也是费尽心机。看来我们早已从祖先那里获得“传家宝”了。如果这样来看人活着的意义就是延续基因的存在。确实这个意义也很重要。但当人类开始有了物品可以记录自己时，这时个体的一生就产生意义了。尤其是当纸张发明出来时，人们可以记录自己的发现、经验和技能等等。准确的来说人类快速发展的原因就是因为我们有了可以准确记录和读取数据的储存器。我们经历了从绳结，到壁画，到纸张，到磁带，这是记录数据准确性的提升；从到磁盘，到硬盘，到固态硬盘，这是存储量和读取速度的提升。正是有了记录数据的储存器的出现，个体的人可以把自己的一生方方面面的数据储存起来，供下一代人来参照和使用。我们现在使用的一本教科书可能就包含了几十代人的一生。书中的一个定理的发现可能就经历了几代人时光。所以从这个意义上来说，人活着的目的就是接受前人的馈赠，再添加点留给后人。因此这样就可以定义短期人活着的意义了，在前人留的纸张上涂上自己的痕迹。<br>　　想到这里我就一下豁然开朗，不过也是够笨的到了这个年纪才想明白。希望现在还不晚，去实现人活着的意义。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 平衡 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>最好的学习方法就是教</title>
+      <link href="2018/03/20/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E5%B0%B1%E6%98%AF%E6%95%99/"/>
+      <url>2018/03/20/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E5%B0%B1%E6%98%AF%E6%95%99/</url>
+      
+        <content type="html"><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote><p>学习的目的是理解学习材料的本质，而不是充当知识搬运工的过程。</p></blockquote><a id="more"></a><h2 id="学习不是充当资料搬运工的过程"><a href="#学习不是充当资料搬运工的过程" class="headerlink" title="学习不是充当资料搬运工的过程"></a>学习不是充当资料搬运工的过程</h2><p>　　大多数学习者的学习方法注重于做笔记，但大多是笔记知识重复书本或者是老师所讲的内容。而不是对学习内容的总结和检验，从而造成一味的记笔记但学习效果是面对问题却依然不会。笔记应该是合上书本，关闭电脑。然后开始写笔记，先通过大脑初步分类，然后在一类一类的概述和复述。将记忆模糊的或者还不理解的部分标注出来。笔记写完之后，在重新回到书本去弄懂这些知识。</p><h2 id="笔记本就是你的学生，把你的所学传授给它"><a href="#笔记本就是你的学生，把你的所学传授给它" class="headerlink" title="笔记本就是你的学生，把你的所学传授给它"></a>笔记本就是你的学生，把你的所学传授给它</h2><p>　　检验你哪里学会了，哪里还不懂的办法就是给你一张白纸。把你知道的写下来，写不出来的就是还没掌握的部分。在写笔记的过程就是等于你在教一名新生的过程。如果你写不出来，自然也教不会。如果你能靠你自己写出来自然其中的思维逻辑你也是明明白白的。</p>]]></content>
+      
+      
       <categories>
-        <category>读书笔记</category>
+          
+          <category> 思考 </category>
+          
       </categories>
-      <tags>
-        <tag>《自私的基因》</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于开始记录时间的一些感悟</title>
-    <url>/2020/07/12/%E5%85%B3%E4%BA%8E%E5%BC%80%E5%A7%8B%E8%AE%B0%E5%BD%95%E6%97%B6%E9%97%B4%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%82%9F/</url>
-    <content><![CDATA[<h2 id="导语"><a href="#导语" class="headerlink" title="导语:"></a>导语:</h2><blockquote>
-<p>大概在6月中旬的时候，我开始反思为什么我总是花了时间还是没干成一件像样的事。像样的事到底指什么，对于我来说是把感兴趣的事能做到影响他人甚至是能帮助他人。以这样的标准来说，确实是像样的事都没干成。我开始寻找原因，并记录我花费在每件事上的时间。<br><a id="more"></a> </p>
-<h3 id="想象和现实差距"><a href="#想象和现实差距" class="headerlink" title="想象和现实差距"></a>想象和现实差距</h3><p>我一度以为世界上最难的事可能是说服我那固执的老妈，让她跳出自己固有的思维圈。可在我记录时间后，我发现世界上最难的事是坚持每天做一件事，并持续不间断。我计划在编程上花费的时间是每天8个番茄，每个番茄半小时，共计4小时。我开始制定计划的时候，觉得4小时不多。除了工作，我还有大把的时间去学习。我主要制定了两项任务其中之一就是学习编程4小时，另一项是每天锻炼身体1小时。6月20日- 7月12日共计23天，编程达到4小时及以上的天数共计6天，锻炼身体达到1小时共计18天。编程花费时间共计48小时，锻炼身体共计18小时。这就是截止到目前的成绩。</p>
-<h3 id="在记录时间过程中的发现"><a href="#在记录时间过程中的发现" class="headerlink" title="在记录时间过程中的发现"></a>在记录时间过程中的发现</h3><ul>
-<li><p>前一天做好第二天的计划很重要</p>
-<p>以前没有做计划的习惯，第二天手头上有事就做事，没事基本就荒废一天，等到晚上开始反思时间都去哪了，这样的循环持续了很久。在我开始学习计划任务时，第二天我过的很充实，我一项一项的完成任务。井井有条，就像自动化工厂一样永远知道自己该做什么和不该做什么。</p>
-</li>
-<li><p>不要等到什么都齐了才开始行动</p>
-<p>以前老觉得别人能干成事，都是因为不缺东西。现在我知道，真正想干成事的人从有这个想法开始，就已经开始行动了。行动后遇到的困难一个一个去解决。把所有时间都投入到解决问题中去。就像一句话说的那样当一件事你有时间都没去做，没时间的时候你更不可能会去做。因为这件事就不在你的优先级上。</p>
-</li>
-<li><p>在学中做，在做中学</p>
-<p>在前期的学习中，我太注重进度。一味的只是看书和例题，并没有花时间重现例题以及课后练习。等我一本书完成了一半，脑子里记住的东西却不多。这时候我就知道我该改变了。认真重现例题并仔细思考课后题，通过练习来巩固所学习的知识点。一步一个脚印，踏实下去。</p>
-</li>
-<li><p>目标不是一蹴而就，就能达成的。</p>
-<p>生活中的各种目标不是一蹴而就达成的，而是定一个目标，然后一点一点的去接近这个目标。生活就是不断出现问题和解决问题的过程。生活中没有一劳永逸的办法。有的只是耐心，对于出现的问题，逐一去解决。</p>
-</li>
-<li><p>坚持自己的选择，100%去执行不要犹豫</p>
-<p>在已经制定了每日计划的前提下，遵照计划执行是最容易的事。不用我们在浪费大脑的精力去纠结到底做还是不做。每次100%的去执行自己事先的计划或者决定是最优的，也是最省时间的。逐渐养成习惯去100%执行自己的决定，而不是在开始时犹豫不决。每当我们开始行动时，犹豫的另一半自己总是在找各种理由，提出各种疑问来阻止你行动，就在你犹豫的时候，时间也在悄悄地溜走。</p>
-</li>
-<li><p>开始做任何一件事务必要超过20小时后，再下结论</p>
-<p>我猜测可能是由于人的基因驱使，人们很难坚持做短期看不到利益得事。正因为如此，我刚开始学习编程的时候没有静下心来，一本书学了几天，没感到有实质性的获得的时候。我会把原因归结于太难，或者自己不适合这门语言。从来没想到是自己投入的时间太少，就想得到产出。在我开始计划时间时，Java编程的时间投入到超过20小时后，我体会到了解决课后习题的快感。我碰一时解决不了的问题，不再妄自菲薄的怪自己，或者天赋不够。而是在浏览器上搜索解决办法，在白纸上不停的尝试解决办法。在编程上花费48小时后，我开始逐渐对编程有了自己的理解，编程是解决问题的工具。练习就是为了掌握编程工具的熟练度。然而解决问题的核心还是人，如果你没有找出解决问题的方法。即使你会再多编程语言也没什么用。编程是按照解决问题的方法去实现方法，从而解决问题。就本质而言，编程工具就是在解决问题中不断的重复，不断的试错。而这些本应该由人来操作的重复动作被机器替代了。从而就把人解放出来，人开始专心投入到找到更快、更好、更新的问题解决方案。</p>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-</blockquote>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 自我反思 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人活着的意义</title>
+      <link href="2017/09/06/%E4%BA%BA%E6%B4%BB%E7%9D%80%E7%9A%84%E6%84%8F%E4%B9%89/"/>
+      <url>2017/09/06/%E4%BA%BA%E6%B4%BB%E7%9D%80%E7%9A%84%E6%84%8F%E4%B9%89/</url>
+      
+        <content type="html"><![CDATA[<p>不知道你们会不会老想人活着的意义，反正这个问题已经困扰了我很久。中间我也通过阅读书籍得到了一些答案，但这些答案并不让我信服。<br><a id="more"></a></p><h2 id="人活着没有任何意义"><a href="#人活着没有任何意义" class="headerlink" title="人活着没有任何意义"></a>人活着没有任何意义</h2><p>　　从一哲学书中作者总结出结论人生没有任何意义，依据是当你死了的时候什么也留不住，那一瞬间什么都烟消云散。如果不假思索的话听上去好像说的也很对，普通人死了也就周围的亲戚朋友知道。等这一波人都逐个去世的时候，也就真没人记得你了。最多公墓里有一块石碑上刻着你的名字。但仔细想想从最初好像就没给<strong>意义</strong>这个词去下定义，什么叫有意义和什么叫没意义，导致很难寻找出来答案。</p><h2 id="人活着有意义，意义都是自己寻找的"><a href="#人活着有意义，意义都是自己寻找的" class="headerlink" title="人活着有意义，意义都是自己寻找的"></a>人活着有意义，意义都是自己寻找的</h2><p>　　从另一本心理书籍上作者得出来另外一种结论：人活着有意义，但这个意义每个人都不一样需要你去寻找。在我个人来看这和第一个答案没什么区别，没有给出来一个实质的答案。这样的答案要用现在互联网上的术语叫<strong>标题党</strong>。但左思右想之后就觉得说的有道理，活着的意义需要每个人都一样么。这个问题到底需要一个普世的答案，还是需要与个体相适应的答案。</p><h2 id="关于我对人活着意义的理解"><a href="#关于我对人活着意义的理解" class="headerlink" title="关于我对人活着意义的理解"></a>关于我对人活着意义的理解</h2><p>　　对于意义的理解，时间跨度我划分为长期和短期。长期指从古人类到现代人类，短期是指人的一生。首先从长期说起，在《自私的基因》一书中，作者阐明一个观点:人之所以会繁衍生息，是因为基因有自私的目的想要永生，就把人类作为一个寄生躯壳。如果抛开个人意识和思想，确实人类代代相传的也就是那不变的23对染色体。基因以自私的目的设计出的有性繁衍和无性繁衍来获得永生。为了让自己的那套基因永存于世，也是费尽心机。看来我们早已从祖先那里获得“传家宝”了。如果这样来看人活着的意义就是延续基因的存在。确实这个意义也很重要。但当人类开始有了物品可以记录自己时，这时个体的一生就产生意义了。尤其是当纸张发明出来时，人们可以记录自己的发现、经验和技能等等。准确的来说人类快速发展的原因就是因为我们有了可以准确记录和读取数据的储存器。我们经历了从绳结，到壁画，到纸张，到磁带，这是记录数据准确性的提升；从到磁盘，到硬盘，到固态硬盘，这是存储量和读取速度的提升。正是有了记录数据的储存器的出现，个体的人可以把自己的一生方方面面的数据储存起来，供下一代人来参照和使用。我们现在使用的一本教科书可能就包含了几十代人的一生。书中的一个定理的发现可能就经历了几代人时光。所以从这个意义上来说，人活着的目的就是接受前人的馈赠，再添加点留给后人。因此这样就可以定义短期人活着的意义了，在前人留的纸张上涂上自己的痕迹。<br>　　想到这里我就一下豁然开朗，不过也是够笨的到了这个年纪才想明白。希望现在还不晚，去实现人活着的意义。</p>]]></content>
+      
+      
       <categories>
-        <category>思考</category>
+          
+          <category> 读书笔记 </category>
+          
       </categories>
-      <tags>
-        <tag>记录时间</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学会做不喜欢的事</title>
-    <url>/2017/07/03/%E5%AD%A6%E4%BC%9A%E5%81%9A%E4%B8%8D%E5%96%9C%E6%AC%A2%E7%9A%84%E4%BA%8B/</url>
-    <content><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote>
-<p>　　一直以来人们都在强调和倡导做自己喜欢的事，但在社会生活中常常遇到的情况是不得不做自己不喜欢的事。这样就导致人们在遇到困难和困境时主动会选择逃避，逃避的理由就是这不是我喜欢的事。做自己喜欢的事和不喜欢的事同样都能带来收获，做自己不喜欢的事会让自己知道为什么喜欢和不喜欢。　　　　　　　　　　　　　　　　　<br><a id="more"></a></p>
-</blockquote>
-<p>　　当孩子还没分清喜欢和不喜欢之间的的区别时，就已经被家庭和学校灌输了一种观念——自己能做得到并且在自己能力范围内的就是喜欢做的事。就这样当孩子遇到暂时的困难时，也会不自觉地暗示自己这可能是不喜欢做的事。没必要在上边浪费时间，而不是想尽一切办法去克服困难。逃避的越多导致路越走越窄，最终会活在自卑的阴影里。<br>　　现在大家的关注点都在某人成功了，取得了什么样的成绩以及拥有多少金钱。成功的人说点什么，就当做金玉良言。完全没有自己的思考和判断，分析一个人的失败可能比成功更有意义。 一个人成功的背后可能是几十次的失败，这几十次的失败帮助他排除了导致失败的许多因素。让他获得了之前不曾有的经验和能力，当再次碰到相同的困难时就可以从容应对。<br>　　当你学会不喜欢的事时，它可能在未来的某一天对你会有巨大的帮助。有时候你的付出在当下可能看不到结果，不要灰心。就和烧开水一样，当你把二三十度的凉水倒入壶中，打开天然气开始加热。当它加热到五十度的时候，水面的高度没有变化。当它加热到九十九度的时候，水边高度依然没有变化。继续加热到一百度时，水面突然沸腾。水面高度开始瞬间起伏波动。这就像我们做一件事时，刚开始即使你付出的再多也依然看不到回报，但我们要做的就是继续坚持努力。坚持到最后一刻水开始沸腾，所有的一切都是值得的。
-　　 </p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 《自私的基因》 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>心理问题大多是由选择逃避造成的</title>
+      <link href="2017/07/23/%E5%BF%83%E7%90%86%E9%97%AE%E9%A2%98%E5%A4%A7%E5%A4%9A%E6%98%AF%E7%94%B1%E9%80%89%E6%8B%A9%E9%80%83%E9%81%BF%E9%80%A0%E6%88%90%E7%9A%84/"/>
+      <url>2017/07/23/%E5%BF%83%E7%90%86%E9%97%AE%E9%A2%98%E5%A4%A7%E5%A4%9A%E6%98%AF%E7%94%B1%E9%80%89%E6%8B%A9%E9%80%83%E9%81%BF%E9%80%A0%E6%88%90%E7%9A%84/</url>
+      
+        <content type="html"><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote><p>　　根据希尔德·布鲁茨博士的《心理学研究》一书中对于一般病人寻求心理治疗的原因进行了解释：他们都面临一个共同的问题—感觉自己不能够‘对付’或者改变现状，因此产生恐惧、无助感和自我怀疑。大多数病人力不从心的根源，在于他总想逃避自由，不能够问他们的问题、他们的生活承担责任。他们感到乏力，在于他们放弃了自己的力量。如果得到治疗，他们就会知道，作为成年人，整个一生都充满了选择和决定的机会。他们接受这一事实，就会变成自由的人。无法接受这种事实，永远都会感到自己是个牺牲品。                         —————-选自《心理学研究》前言<br><a id="more"></a></p></blockquote><h3 id="如果你不解决问题，你就会成为问题"><a href="#如果你不解决问题，你就会成为问题" class="headerlink" title="如果你不解决问题，你就会成为问题"></a>如果你不解决问题，你就会成为问题</h3><p>　　面对当前的问题不要选择逃避，主动去解决问题，才能够得到学习和成长。人生是一个不断面对问题、并解决问题的过程。问题可以开启我们的智慧，激发我们的勇气。为解决问题而付出努力，我们的思想和心灵就会不断的成长，心智就会不断的成熟。<br>　　人生苦难重重，是世界上最伟大的真理之一。它的伟大之处在于，一旦领悟这句话的真谛，就能从苦难中解脱出来，实现人生的超越。只要我们真正理解并接受了人生苦难重重的事实，那么我们就会释然，再也不会对人生中的苦难耿耿于怀。</p><h3 id="唯有痛苦才会带来教益"><a href="#唯有痛苦才会带来教益" class="headerlink" title="唯有痛苦才会带来教益"></a>唯有痛苦才会带来教益</h3><p>　　承受面对问题和解决问题的痛苦，我们就能从痛苦中学到很多东西。面对问题，智慧的人不会因害怕痛苦而选择逃避，他们会迎上前去，坦然承受问题带给自己的痛苦，直到把问题彻底解决。<br>　　本文大部分节选《少有人走的路》。<br>　　<img src="http://img.mp.itc.cn/upload/20170708/61547ce7ec024e8facbef7ad4b3659ec.jpg" alt>　　　　</p>]]></content>
+      
+      
       <categories>
-        <category>思考</category>
+          
+          <category> 读书笔记 </category>
+          
       </categories>
-      <tags>
-        <tag>自我反思</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>对于平衡的思考</title>
-    <url>/2018/03/21/%E5%AF%B9%E4%BA%8E%E5%B9%B3%E8%A1%A1%E7%9A%84%E6%80%9D%E8%80%83/</url>
-    <content><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote>
-<p>生活就是一场平衡的游戏。当你处于平衡点之上时要懂得怎样回归到平衡点，当你处于平衡点之下时不断尝试怎样达到平衡点。<br><a id="more"></a><br>  之所以会想到这个话题是今天突然在脑海里浮现出价格波动规律.我们都从课本上学过价格波动规律-价格围绕商品的价值上下波动.价值波动规律就是一种动态平衡,似乎这显而易见.但当价格规律落到人类的头上,人们就无法显而易见了.总觉得静止的平衡才是平衡,其他都是不好的.</p>
-</blockquote>
-<h3 id="认识动态平衡"><a href="#认识动态平衡" class="headerlink" title="认识动态平衡"></a>认识动态平衡</h3><p>  找到平衡才能使自己从容不迫的面对生活,面对熟悉的脸,面对陌生的脸.人们只关注某人在某一刻的生活状况,无论好坏都给出他们的评价.鲜有人能拿出一段时间或者一个周期来比较.统计学大家都知道的,样本对于统计学很关键.如果样本的数量少了,根据样本数据得出的结论就会与真实情况有很大出入.类似的,当吃瓜群众看你开宝马来的时候一个评价,骑三轮走的时候又一个相反的评价.对于这种噪音要学会过滤.要学会以周期眼光来看待和思考问题的方式即动态平衡.不要为一时的走运而沾沾自喜,不要为了一时的失败而止步不前.时刻谨记自己处在周期之中,说不定下一刻一切归零重新开始.</p>
-<h3 id="拥有周期心态才能更好的把握生活"><a href="#拥有周期心态才能更好的把握生活" class="headerlink" title="拥有周期心态才能更好的把握生活"></a>拥有周期心态才能更好的把握生活</h3><p>  人往往处在困境的时候越喜欢给自己制造不良的紧张心态,让自己越来越对自己没信心.往往处在有利的情景中骄傲自满,过于自信.所以要懂得自己所在的周期,利用周期来平衡自己的心态.用更好的心态来迎接变化.</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 《少有人走的路》 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学会做不喜欢的事</title>
+      <link href="2017/07/03/%E5%AD%A6%E4%BC%9A%E5%81%9A%E4%B8%8D%E5%96%9C%E6%AC%A2%E7%9A%84%E4%BA%8B/"/>
+      <url>2017/07/03/%E5%AD%A6%E4%BC%9A%E5%81%9A%E4%B8%8D%E5%96%9C%E6%AC%A2%E7%9A%84%E4%BA%8B/</url>
+      
+        <content type="html"><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote><p>　　一直以来人们都在强调和倡导做自己喜欢的事，但在社会生活中常常遇到的情况是不得不做自己不喜欢的事。这样就导致人们在遇到困难和困境时主动会选择逃避，逃避的理由就是这不是我喜欢的事。做自己喜欢的事和不喜欢的事同样都能带来收获，做自己不喜欢的事会让自己知道为什么喜欢和不喜欢。　　　　　　　　　　　　　　　　　<br><a id="more"></a></p></blockquote><p>　　当孩子还没分清喜欢和不喜欢之间的的区别时，就已经被家庭和学校灌输了一种观念——自己能做得到并且在自己能力范围内的就是喜欢做的事。就这样当孩子遇到暂时的困难时，也会不自觉地暗示自己这可能是不喜欢做的事。没必要在上边浪费时间，而不是想尽一切办法去克服困难。逃避的越多导致路越走越窄，最终会活在自卑的阴影里。<br>　　现在大家的关注点都在某人成功了，取得了什么样的成绩以及拥有多少金钱。成功的人说点什么，就当做金玉良言。完全没有自己的思考和判断，分析一个人的失败可能比成功更有意义。 一个人成功的背后可能是几十次的失败，这几十次的失败帮助他排除了导致失败的许多因素。让他获得了之前不曾有的经验和能力，当再次碰到相同的困难时就可以从容应对。<br>　　当你学会不喜欢的事时，它可能在未来的某一天对你会有巨大的帮助。有时候你的付出在当下可能看不到结果，不要灰心。就和烧开水一样，当你把二三十度的凉水倒入壶中，打开天然气开始加热。当它加热到五十度的时候，水面的高度没有变化。当它加热到九十九度的时候，水边高度依然没有变化。继续加热到一百度时，水面突然沸腾。水面高度开始瞬间起伏波动。这就像我们做一件事时，刚开始即使你付出的再多也依然看不到回报，但我们要做的就是继续坚持努力。坚持到最后一刻水开始沸腾，所有的一切都是值得的。　　 </p>]]></content>
+      
+      
       <categories>
-        <category>思考</category>
+          
+          <category> 思考 </category>
+          
       </categories>
-      <tags>
-        <tag>平衡</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>心理问题大多是由选择逃避造成的</title>
-    <url>/2017/07/23/%E5%BF%83%E7%90%86%E9%97%AE%E9%A2%98%E5%A4%A7%E5%A4%9A%E6%98%AF%E7%94%B1%E9%80%89%E6%8B%A9%E9%80%83%E9%81%BF%E9%80%A0%E6%88%90%E7%9A%84/</url>
-    <content><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote>
-<p>　　根据希尔德·布鲁茨博士的《心理学研究》一书中对于一般病人寻求心理治疗的原因进行了解释：他们都面临一个共同的问题—感觉自己不能够‘对付’或者改变现状，因此产生恐惧、无助感和自我怀疑。大多数病人力不从心的根源，在于他总想逃避自由，不能够问他们的问题、他们的生活承担责任。他们感到乏力，在于他们放弃了自己的力量。如果得到治疗，他们就会知道，作为成年人，整个一生都充满了选择和决定的机会。他们接受这一事实，就会变成自由的人。无法接受这种事实，永远都会感到自己是个牺牲品。                         —————-选自《心理学研究》前言<br><a id="more"></a></p>
-</blockquote>
-<h3 id="如果你不解决问题，你就会成为问题"><a href="#如果你不解决问题，你就会成为问题" class="headerlink" title="如果你不解决问题，你就会成为问题"></a>如果你不解决问题，你就会成为问题</h3><p>　　面对当前的问题不要选择逃避，主动去解决问题，才能够得到学习和成长。人生是一个不断面对问题、并解决问题的过程。问题可以开启我们的智慧，激发我们的勇气。为解决问题而付出努力，我们的思想和心灵就会不断的成长，心智就会不断的成熟。<br>　　人生苦难重重，是世界上最伟大的真理之一。它的伟大之处在于，一旦领悟这句话的真谛，就能从苦难中解脱出来，实现人生的超越。只要我们真正理解并接受了人生苦难重重的事实，那么我们就会释然，再也不会对人生中的苦难耿耿于怀。</p>
-<h3 id="唯有痛苦才会带来教益"><a href="#唯有痛苦才会带来教益" class="headerlink" title="唯有痛苦才会带来教益"></a>唯有痛苦才会带来教益</h3><p>　　承受面对问题和解决问题的痛苦，我们就能从痛苦中学到很多东西。面对问题，智慧的人不会因害怕痛苦而选择逃避，他们会迎上前去，坦然承受问题带给自己的痛苦，直到把问题彻底解决。<br>　　本文大部分节选《少有人走的路》。<br>　　<img src="http://img.mp.itc.cn/upload/20170708/61547ce7ec024e8facbef7ad4b3659ec.jpg" alt>
-　　
-　　</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 自我反思 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MySQL中文乱码的解决方案</title>
+      <link href="2017/01/31/MySQL%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+      <url>2017/01/31/MySQL%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      
+        <content type="html"><![CDATA[<ul><li>创建数据库的时候<a id="more"></a></li></ul><blockquote><p>create database  database_name </p><p>character set ‘utf8’</p><p>collate ‘utf8_general_ci’;</p></blockquote><ul><li>建表的时候</li></ul><blockquote><p>create table table_name(</p><p>‘ID’ varchar(40) NOT NULL,</p><p>‘UserID’ varchar(40) NOT NULL,</p><p>) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p></blockquote><ul><li>查看默认的编码格式</li></ul><blockquote><p>show variables like “%char%”;</p><p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fca2jq1inij30mu074q2x.jpg" alt></p></blockquote><ul><li>python 操作MySQL时</li></ul><blockquote><p>db = MySQLdb.connect(“localhost”,”root”,”xt801”,”Blogdb”,<strong>charset=’utf8’</strong>)</p></blockquote><ul><li>已经建好数据库和表的处理方法</li></ul><blockquote><p>mysql&gt; set names utf8;</p><p>等同于同时设定如下：</p><p>SET character_set_client=’utf8’;<br>SET character_set_connection=’utf8’;<br>SET character_set_results=’utf8’;  </p></blockquote><p>参考：</p><ul><li>[彻底解决mysql中文乱码的办法](<a href="http://www.pc6.com/infoview/Article_63586.html）" target="_blank" rel="noopener">http://www.pc6.com/infoview/Article_63586.html）</a></li><li>[python操作mysql中文显示乱码的解决方法](<a href="http://www.jb51.net/article/56086.htm）" target="_blank" rel="noopener">http://www.jb51.net/article/56086.htm）</a></li></ul>]]></content>
+      
+      
       <categories>
-        <category>读书笔记</category>
+          
+          <category> 数据库 </category>
+          
       </categories>
-      <tags>
-        <tag>《少有人走的路》</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>最好的学习方法就是教</title>
-    <url>/2018/03/20/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E5%B0%B1%E6%98%AF%E6%95%99/</url>
-    <content><![CDATA[<h2 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h2><blockquote>
-<p>学习的目的是理解学习材料的本质，而不是充当知识搬运工的过程。</p>
-</blockquote>
-<a id="more"></a>
-<h2 id="学习不是充当资料搬运工的过程"><a href="#学习不是充当资料搬运工的过程" class="headerlink" title="学习不是充当资料搬运工的过程"></a>学习不是充当资料搬运工的过程</h2><p>　　大多数学习者的学习方法注重于做笔记，但大多是笔记知识重复书本或者是老师所讲的内容。而不是对学习内容的总结和检验，从而造成一味的记笔记但学习效果是面对问题却依然不会。笔记应该是合上书本，关闭电脑。然后开始写笔记，先通过大脑初步分类，然后在一类一类的概述和复述。将记忆模糊的或者还不理解的部分标注出来。笔记写完之后，在重新回到书本去弄懂这些知识。</p>
-<h2 id="笔记本就是你的学生，把你的所学传授给它"><a href="#笔记本就是你的学生，把你的所学传授给它" class="headerlink" title="笔记本就是你的学生，把你的所学传授给它"></a>笔记本就是你的学生，把你的所学传授给它</h2><p>　　检验你哪里学会了，哪里还不懂的办法就是给你一张白纸。把你知道的写下来，写不出来的就是还没掌握的部分。在写笔记的过程就是等于你在教一名新生的过程。如果你写不出来，自然也教不会。如果你能靠你自己写出来自然其中的思维逻辑你也是明明白白的。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MySQL数据库操作(2)</title>
+      <link href="2017/01/30/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C-2/"/>
+      <url>2017/01/30/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C-2/</url>
+      
+        <content type="html"><![CDATA[<p>MySQL 数据库高级操作<br><a id="more"></a></p><ul><li>selet top 选取前面第n条记录</li></ul><blockquote><p>slect column_name from table_name limit number;</p></blockquote><ul><li>like 操作符</li></ul><blockquote><p>select column_names from table_name where column_name like pattern;    #parten 为通配符 例如匹配Google    like ‘%oo%’</p></blockquote><ul><li>in 操作符</li></ul><blockquote><p>select column_names from table_name where column_name in (valuel1, valuel2,……);</p></blockquote><ul><li>between 操作符</li></ul><blockquote><p>select column_name() from table_name where column_name between valuel and value2;</p></blockquote><ul><li>别名语法</li></ul><blockquote><p>select colum_name as alias_name from table_name; #给列加别名</p><p>select column_names from table_name as alias_name; #给表加别名</p></blockquote><ul><li>join 表连接</li></ul><blockquote><p>select table1.column_name, table2. column_name, ….. from table1, inser join table2,…… on table1.name = table2.name, table2.name = table3.name;</p><ul><li>INNER JOIN：如果表中有至少一个匹配，则返回行</li><li>LEFT JOIN：即使右表中没有匹配，也从左表返回所有的行</li><li>RIGHT JOIN：即使左表中没有匹配，也从右表返回所有的行   </li><li>FULL JOIN：只要其中一个表中存在匹配，则返回行</li></ul></blockquote><ul><li>union 语法</li></ul><blockquote><p>union</p></blockquote><blockquote><p>select column_names from table1 </p><p>union select column_names from table2; # 选取所有不同值</p></blockquote><blockquote><p>union all</p></blockquote><blockquote><p>select column_names from table1 </p><p>union all  select column)names from table2;# 包括相同值</p></blockquote><ul><li>select into 复制表或列插入新表</li></ul><blockquote><p>select * into newtable from talbe1; #复制所有列到新表</p><p>select  column_names into  newtable from table1;#复制新列到新表</p></blockquote><ul><li>insert into select 从一个表中复制数据，把数据插入到一个已存在的表中</li></ul><blockquote><p>insert into table2 select * from table1; #将表一中的所有列插入到表二</p></blockquote><blockquote><p>insert into table2 (column_names) </p><p>select column_names from table1;#将表一选中的列插入到表二中</p></blockquote><ul><li>create database </li></ul><blockquote><p>create database database_name;</p></blockquote><ul><li>create table</li></ul><blockquote><p>create table table_name(column_name1 data_type(size),</p><p>​                                             column_name1 data_type(size),</p><p>​                                              column_name1 data_type(size),</p><p>​                                             ……..);</p></blockquote><h3 id="SQL约束"><a href="#SQL约束" class="headerlink" title="SQL约束"></a>SQL约束</h3><p>SQL 约束用于规定表中的数据规则。如果存在违反约束的数据行为，行为会被约束终止。</p><ul><li>SQL CREATE TABLE + CONSTRAINT 语法</li></ul><blockquote><p>create table table_name(</p><p> column_name1  data_type(size)  constraint_name,</p><p> column_name1  data_type(size)   constraint_name,</p><p>column_name1  data_type(size)    constraint_name,</p><p>……………..</p><p>); </p><h4 id="约束有如下："><a href="#约束有如下：" class="headerlink" title="约束有如下："></a><strong>约束有如下：</strong></h4><ul><li>not null       ——-  某列不能储存null值 </li></ul><blockquote><p>create table Persons(</p><p>P_Id int not null,#强制LastName列不接受NULL值</p><p>LastName varchar(255) not null,# 如果不向字段添加值，就无法插入新记录或者更新记录</p><p>FirstName varchar(255),</p><p>Address varchar(255),</p><p>City varchar(255))</p></blockquote><ul><li>unique        ——-   某列的每行必须有唯一值</li></ul><blockquote><p>CREATE TABLE Persons<br>(<br>P_Id int NOT NULL,<br>LastName varchar(255) NOT NULL,<br>FirstName varchar(255),<br>Address varchar(255),<br>City varchar(255),<br><strong>UNIQUE (P_Id，LastName)</strong>)    # 约束唯一标识数据库中的每条记录</p></blockquote><ul><li>primary key   ——-  not null and unique</li></ul><blockquote><p> <strong>PRIMARY KEY</strong> 约束唯一标识数据库表中的每条记录</p><ul><li><p>主键必须包含唯一的值</p></li><li><p>主键列不能包含 NULL 值</p></li><li><p>每个表都应该有一个主键，并且每个表只能有一个主键   </p><blockquote><p> CREATE TABLE Persons</p><p>(</p><p>P_Id int NOT NULL,</p><p>LastName varchar(255) NOT NULL,</p><p>FirstName varchar(255),</p><p>Address varchar(255),</p><p>City varchar(255),</p><p><strong>PRIMARY KEY (P_Id)</strong></p><p>)</p><p>或者</p><p>CREATE TABLE Persons<br>(<br>P_Id int <strong>NOT NULL PRIMARY KEY</strong>,<br>LastName varchar(255) NOT NULL,<br>FirstName varchar(255),<br>Address varchar(255),<br>City varchar(255)<br>)  </p></blockquote><ul><li><p>当表已被创建时，如需在 “P_Id” 列创建 PRIMARY KEY 约束，请使用下面的 SQL：</p><blockquote><p>ALTER TABLE Persons</p><p>ADD PRIMARY KEY (P_Id)  </p><p>如果您使用 ALTER TABLE 语句添加主键，必须把主键列声明为不包含 NULL 值（在表首次创建时）</p></blockquote></li><li><p>撤销PRIMARY KEY 约束</p><blockquote><p>  ALTER TABLE Persons<br>  DROP PRIMARY KEY</p></blockquote></li></ul></li></ul></blockquote><ul><li><p>foreign key    ——– 一个表中的数据匹配拎一个表中的值的参照完整性</p><blockquote><p><img src="https://ww4.sinaimg.cn/large/006y8lValy1fc91a91kr7j30kt0fu0t2.jpg" alt> CREATE TABLE Orders</p><p>(</p><p>O_Id int NOT NULL,</p><p>OrderNo int NOT NULL,</p><p>P_Id int,</p><p><strong>PRIMARY KEY (O_Id)</strong>,</p><p><strong>FOREIGN KEY (P_Id) REFERENCES Persons(P_Id)</strong></p><p>)</p><p>一个表中的 FOREIGN KEY 指向另一个表中的 PRIMARY KEY</p><p>  FOREIGN KEY 约束用于预防破坏表之间连接的行为。</p><p> FOREIGN KEY 约束也能防止非法数据插入外键列，因为它必须是   它指向的那个表中的值之一。 </p></blockquote></li><li><p>check            ———  保证列中的值符合指定的条件</p><blockquote><p> CHECK 约束用于限制列中的值的范围。</p><blockquote><p>CREATE TABLE Persons</p></blockquote><blockquote><p>(</p></blockquote><blockquote><p>P_Id int NOT NULL,</p></blockquote><blockquote><p>LastName varchar(255) NOT NULL,</p></blockquote><blockquote><p>FirstName varchar(255),</p></blockquote><blockquote><p>Address varchar(255),</p></blockquote><blockquote><p>City varchar(255),</p></blockquote><blockquote><p>CHECK (P_Id&gt;0))</p></blockquote><p> 当表已被创建时，如需在 “P_Id” 列创建 CHECK 约束，请使用下面的 SQL;</p><blockquote><p>ALTER TABLE Persons</p></blockquote><blockquote><p>ADD CHECK (P_Id&gt;0)</p></blockquote><p>  如需命名 CHECK 约束，并定义多个列的 CHECK 约束，请使用下面的 SQL 语法：</p><blockquote><p>ALTER TABLE Persons</p></blockquote><blockquote><p>ADD CONSTRAINT chk_Person CHECK (P_Id&gt;0 AND City=’Sandnes’)</p></blockquote><p> 如需撤销 CHECK 约束，请使用下面的 SQL ;</p><blockquote><p>ALTER TABLE Persons</p></blockquote><blockquote><p> DROP CHECK chk_Person   </p></blockquote></blockquote></li><li><p>default         ———-规定没有给出列赋值的默认值</p></li></ul><blockquote><p>  下面的 SQL 在 “Persons” 表创建时在 “City” 列上创建 DEFAULT 约束：</p><blockquote><p> CREATE TABLE Persons</p><p>(</p><p>P_Id int NOT NULL,</p><p>LastName varchar(255) NOT NULL,</p><p>FirstName varchar(255),</p><p>Address varchar(255),</p><p>City varchar(255) <strong>DEFAULT ‘Sandnes’</strong></p><p>)</p><p> 当表已被创建时，如需在 “City” 列创建 DEFAULT 约束，请使用下面的 SQL;</p><blockquote><p>ALTER TABLE Persons</p><p>ALTER City SET DEFAULT ‘SANDNES’ </p></blockquote><p>如需撤销 DEFAULT 约束，请使用下面的 SQL：</p><blockquote><p>ALTER TABLE Persons</p><p>ALTER City DROP DEFAULT </p></blockquote></blockquote><ul><li><p>create index </p><blockquote><p>您可以在表中创建索引，以便更加快速高效地查询数据。</p><p>用户无法看到索引，它们只能被用来加速搜索/查询。</p><p> CREATE INDEX index_name</p><p>ON table_name (column_name)</p><p>DROP INDEX 语句用于删除表中的索引</p><p>  DROP INDEX table_name.index_name</p></blockquote></li><li><p>drop </p><blockquote><p> DROP TABLE table_name #   DROP TABLE 语句用于删除表。</p><p>DROP DATABASE database_name # DROP DATABASE 语句用于删除数据库。</p><p>   TRUNCATE TABLE table_name # 如果我们仅仅需要删除表内的数据，但并不删除表本身   </p></blockquote></li><li><p>alter </p><blockquote><p> 如需在表中添加列，请使用下面的语法:</p><p> ALTER TABLE table_name</p><p>ADD column_name datatype</p><p>  如需删除表中的列，请使用下面的语法</p><p> ALTER TABLE table_name</p><p>DROP COLUMN column_name</p><p><img src="https://ww4.sinaimg.cn/large/006y8lVagy1fc9211eaqwj30ko04pglj.jpg" alt></p><p>我们想要改变 “Persons” 表中 “DateOfBirth” 列的数据类型:</p><p>ALTER TABLE Persons</p><p>ALTER COLUMN DateOfBirth year</p><p>  我们想要删除 “Person” 表中的 “DateOfBirth” 列</p><p> ALTER TABLE Persons</p><p>DROP COLUMN DateOfBirth</p></blockquote></li><li><p>auto increment </p><blockquote><p> Auto-increment 会在新记录插入表中时生成一个唯一的数字。</p><p> CREATE TABLE Persons</p><p>(</p><p>ID int NOT NULL <strong>AUTO_INCREMENT</strong>,</p><p>LastName varchar(255) NOT NULL,</p><p>FirstName varchar(255),</p><p>Address varchar(255),</p><p>City varchar(255),</p><p><strong>PRIMARY KEY (ID)</strong></p><p>) </p><p>默认地，AUTO_INCREMENT 的开始值是 1，每条新记录递增 1。</p><p>要让 AUTO_INCREMENT 序列以其他的值起始，请使用下面的 SQL 语法：</p><p> ALTER TABLE Persons AUTO_INCREMENT=100    </p></blockquote></li><li><p>Vews 视图</p><blockquote><p>视图是可视化的表。</p><p>CREATE VIEW view_name AS</p><p>SELECT column_name(s)</p><p>FROM table_name</p><p>WHERE condition;</p><p>SELECT * FROM view_name ;  # 查询视图  </p><p>更新视图</p><p>CREATE OR REPLACE VIEW view_name AS</p><p>SELECT column_name(s)</p><p>FROM table_name</p><p>WHERE condition；</p><p>撤销视图</p><p>DROP VIEW view_name</p></blockquote><p>​</p></li></ul></blockquote></blockquote><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><h4 id="MySQL-Date-函数"><a href="#MySQL-Date-函数" class="headerlink" title="MySQL Date 函数"></a><strong>MySQL Date 函数</strong></h4><p><img src="https://ww3.sinaimg.cn/large/006y8lVagy1fc92eu806xj30kn0cs0t2.jpg" alt></p><p><img src="https://ww1.sinaimg.cn/large/006y8lVagy1fc92gniv6yj30d005z0sp.jpg" alt></p><h4 id="NULL"><a href="#NULL" class="headerlink" title="NULL"></a>NULL</h4><p><img src="https://ww1.sinaimg.cn/large/006y8lVagy1fc92j1ggfqj30kn09awep.jpg" alt></p><p><img src="https://ww3.sinaimg.cn/large/006y8lVagy1fc92l5nfrej30h602kmx1.jpg" alt></p><h4 id="MySQL数据类型"><a href="#MySQL数据类型" class="headerlink" title="MySQL数据类型"></a>MySQL数据类型</h4><p><img src="https://ww4.sinaimg.cn/large/006y8lVagy1fc92nu2tofj30ko0diq38.jpg" alt></p><p><img src="https://ww3.sinaimg.cn/large/006y8lVagy1fc92q3wclbj30hl02m746.jpg" alt></p><p><img src="https://ww1.sinaimg.cn/large/006y8lVagy1fc92qcvc2qj30hp0jnt9t.jpg" alt></p><p><img src="https://ww4.sinaimg.cn/large/006y8lVagy1fc92ql0r1nj30hk0gst9o.jpg" alt></p><p><img src="https://ww2.sinaimg.cn/large/006y8lVagy1fc92qtg13rj30hl0gbjs4.jpg" alt></p>]]></content>
+      
+      
       <categories>
-        <category>思考</category>
+          
+          <category> 数据库 </category>
+          
       </categories>
-      <tags>
-        <tag>自我反思</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>用问题来认识自己</title>
-    <url>/2017/01/23/%E7%94%A8%E9%97%AE%E9%A2%98%E6%9D%A5%E5%8F%8D%E6%80%9D%E4%B8%8B%E8%87%AA%E5%B7%B1/</url>
-    <content><![CDATA[<p>有时候自己才是最陌生的，通过问题来深挖自己内心的真实想法。<br><a id="more"></a>   </p>
-<h2 id="为什么要写博客"><a href="#为什么要写博客" class="headerlink" title="为什么要写博客"></a>为什么要写博客</h2><p>　　说实话我早有打算自己写一个博客来记录下自己的过往和经历，但是由于自己得了一种怪病。一直找不到良药来医治，这个病的名字就叫做懒。所以就一拖再拖。真的让自己下定决心要开始搞一个博客是看了知乎专栏里的一篇文章名为<a href="https://zhuanlan.zhihu.com/p/19743861?columnSlug=cnfeat" target="_blank" rel="noopener">《为什么你要写博客》</a>，作者<strong>陈素封</strong>。作者确实写到了我的痛处，而我也深有体会。我喜欢编程，虽然水平渣渣但特喜欢折腾。没办法年轻人火气大，没有女朋友总得有地方发泄一下。每当我Google找到解决某种问题的解决方案，过段时间又碰到同样的问题又得去查一遍。重复这个过程白白浪费了我很多时间。还有就是当我在某一时间突然悟道或者想通之前没有明白的事，当时很清楚但是过段时间自己又忘得一干二净。所以老话讲好记性不如烂笔头果然没错。自然写博客就被提上了必做的清单。</p>
-<h2 id="重新认识自己"><a href="#重新认识自己" class="headerlink" title="重新认识自己"></a>重新认识自己</h2><p>　　认识自己好像是一个被讲的很烂的话题，但从没觉得认识过自己。觉得认识自己需要从身体里跳出来站在一个旁人的角度来审视自己，我做不到所以就没去深究认识自己。但读完这篇文章后，有个想法通过回答一些问题可以把自己展示出来给大家。大家就可以站在一个第三方的角度来审视。即便没人愿意这样做，到了一年半载之后。当我再回顾这篇博文时，也能站在一个客观的角度去认识当时的自己。下面是知乎文章内容里的<strong>9个问题</strong>我来回答下：<br>　　<strong>1.请介绍下你自己，你是一个什么样的人？</strong><br>　　一个大学毕业两年半目前混的不怎样的单身汪。游离在理想主义和现实主义之间的一个矛盾体。碰到好奇的事物，花三天三夜也要弄明白不然会吃不好睡不好的人。一个总要把不喜欢做的事拖到最后的人，喜欢清闲却又讨厌清闲，喜欢安定又讨厌安定，喜欢远行却又待在原地不动的人。做事非常认真不喜欢出错，追求完美不喜欢瑕疵，好独处不喜欢别人长时间打扰的人。这些合起来大概就是我了。   </p>
-<p>　　<strong>2.你有什么理想吗？这个理想是怎么形成的？</strong><br>　　目前理想对我来说就是实现财务自由。可能由于自己这两年半每当自己想行动的时候总是在考虑钱的问题。   </p>
-<p>　　<strong>3.你理想的伴侣关系是什么样的？你自己在这个伴侣关系中扮演什么样的角色？要承担什么样的责任？</strong><br>　　理想的关系就是即独立又相互吸引，充分信任对方并有各自的私属空间，遇事能一起面对和解决而不是抱怨和逃避。扮演的角色应该是一个灯塔，能指明双方关系发展的方向和解决问题的引导者。承担的责任：照顾双方的父母，引导孩子的成长，让伴侣有安全感和热爱生活。   </p>
-<p>　　<strong>4.你理想的事业是什么，你正在做的工作符合你的事业理想么？这份工作对你的意义是什么？</strong><br>　　理想职业是做程序员。现在从事货物运输管理工作。这份工作对我的意义就是混口饭吃，不至于向父母伸手。   </p>
-<p>　　<strong>5.你对亲子关系怎么看？对你来说，什么是一个理想的父亲或者母亲，你期望自己成为这样一个父亲或母亲么？</strong><br>　　亲子关系应该是又像大哥哥又像朋友又像智者。理想的父亲应该是引导孩子，在遇到困难时鼓励孩子一步步解决问题，孩子在遇到困难时不轻易向父亲求助。培养孩子形成一种成长式思维模式，把失败看成是成长路上的基石。解答孩子在成长中遇到好奇的问题，比如性和身体变化。   </p>
-<p>　　<strong>6.你对钱怎么看，你认为赚到多少钱是足够的？如果你明天一早醒来，已经有足够的钱，你将会如何继续安排你的生活？</strong><br>　　钱不是做事考虑的主要因素时，这时就够了。如果有足够的钱，应该还是按原计划走吧。可能进度会变快了。   </p>
-<p>　　<strong>7.对你来说，什么是理想的性生活？什么是理想的性道德，在你的性道德观中，什么样的性生活是禁忌，需要避免的，什么样的性生活是美好的，需要得到鼓励和发展的？</strong><br>　　双方以享受为目的性生活是理想的。理想的性道德是同时忠于精神和身体。性生活的禁忌精神和身体的不忠。双方都能从性生活中获得愉悦感和实现各自的性幻想，这样的性生活是美好的。      </p>
-<p>　　<strong>8.你的择友标准是什么？什么样的人你会愿意交往，什么样的人你会拒绝和他交往？</strong><br>　　交友的标准是言而有信，表里如一。满足标准的愿意交往。反之则拒绝和他交往。    </p>
-<p>　　<strong>9.你对死亡怎么看？你希望自己活到多少岁，你准备怎么度过从现在到死亡的这段时间？如果你要立遗嘱，这份遗嘱怎么写？</strong><br>　　人固有一死，只是早晚的问题。希望自己活得越长越好很期待看到这个世界在我有生之年会有什么样的变化。我会努力实现财务自由，然后专心编程，实现我用代码让生活更加便捷的初衷。下面是我的遗嘱：<br>　　孩子我没有什么可留给你的，因为这是你的人生必须要按你的方式活。我想留给你一句话：人生苦难重重，苦乐相随。    </p>
-<p>　　  回答这九个问题还是花了不少时间，这就是这个阶段我的回答。5年后我会再回答一遍，看一下有什么变化。     </p>
-<p>引用：<br>1.<a href="https://zhuanlan.zhihu.com/p/19743861?columnSlug=cnfeat" target="_blank" rel="noopener">《为什么你要写博客》— 陈素封</a><br>2.《很少人能顺畅回答这9个问题——心理治疗刚开始医生常常会先问你的》— 李孟潮]
-　　
-　　
-　　</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MySQL数据库操作(1)</title>
+      <link href="2017/01/30/MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C-1/"/>
+      <url>2017/01/30/MYSQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C-1/</url>
+      
+        <content type="html"><![CDATA[<p>MySQL数据库的基本用法和命令<br><a id="more"></a></p><h2 id="MYSQL数据库操作-一"><a href="#MYSQL数据库操作-一" class="headerlink" title="MYSQL数据库操作(一)"></a>MYSQL数据库操作(一)</h2><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><ul><li><p>1.<strong>终端登录数据库</strong></p><blockquote><p>mysql -u root -p</p></blockquote></li><li><p>2.<strong>创建数据库&amp;删除数据库</strong></p><blockquote><p>create database database_name;</p></blockquote><blockquote><p>drop database database_name;</p></blockquote></li><li><p>3.<strong>创建数据表&amp;删除数据表</strong></p><blockquote><p>create table table_name;</p></blockquote><blockquote><p>drop table table_name;     # 删除整张表</p></blockquote><blockquote><p>truncate table table_name; #只删除表内数据，保留表</p></blockquote></li><li><p>4.<strong>查看数据库&amp;数据表</strong></p><blockquote><p>show databases;</p></blockquote><blockquote><p>show tables;</p></blockquote></li><li><p>5.<strong>向表中插入数据两种方式</strong></p><blockquote><p>insert into table_name values (value1,value2,value3,…);</p></blockquote><blockquote><p>insert into table_name values ( column1,column2,…….) value (value1,value2,value3………);</p></blockquote></li><li><p>6.<strong>删除数据</strong></p><blockquote><p>delete from table_name where some_clumn = some_value;</p><p>如果没有where子句规则，则删除所有记录</p></blockquote></li><li><p>7.<strong>更新记录</strong></p><blockquote><p>update table_name set column1=value1,column2=value2,….where some_column=some_value;</p></blockquote></li><li><p>8.<strong>查询记录</strong></p><blockquote><p>查询具体的列</p><p>select column_name, column_name from table_name;</p></blockquote><blockquote><p>查看整张表</p><p>select * from table_name;</p></blockquote><blockquote><p>查询时列值不重复</p><p>select distunct column_name,column_name from table_name;</p></blockquote><blockquote><p>过滤查询</p><p>select column_name,column_name from table_name where column_name operator value;</p><p>and &amp;or 用于过滤查询</p><p>select coloumn_name ,  from table_name where  条件1 and/or 条件2；</p><p>orderby 查询并排序</p><p>select column_name,column_name from table_name order by column_name,column_name ASC|DESC; (默认升序，DESC降序)</p></blockquote></li><li><p>9.设置标的字符集为utf8</p><blockquote><p>set names utf8;</p></blockquote></li></ul>]]></content>
+      
+      
       <categories>
-        <category>思考</category>
+          
+          <category> 数据库 </category>
+          
       </categories>
-      <tags>
-        <tag>自我反思</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>观看陈平的跨学科思维课程的思考一</title>
-    <url>/2020/04/28/%E8%A7%82%E7%9C%8B%E9%99%88%E5%B9%B3%E7%9A%84%E8%B7%A8%E5%AD%A6%E7%A7%91%E6%80%9D%E7%BB%B4%E8%AF%BE%E7%A8%8B%E7%9A%84%E6%80%9D%E8%80%83%E4%B8%80/</url>
-    <content><![CDATA[<h2 id="导语"><a href="#导语" class="headerlink" title="导语"></a>导语</h2><p>​    现如今我们所处的时代已经不是一个知识匮乏的时代，人人通过手机和电脑就可以找到任何学科的学习资料。这是一个信息过剩的时代，我们处在一个信息沼泽里，如何才能不被信息淹没这是我们要思考的问题。这个时代每个人都是信息的制造者，每条信息的背后都承载着信息制造者的目的。而我们恰恰就是信息的接受者，选择怎样接受信息，信息同时也就怎样塑造了我们。<br><a id="more"></a></p>
-<h3 id="研究型教学方法和传统教学型教学方法对比"><a href="#研究型教学方法和传统教学型教学方法对比" class="headerlink" title="研究型教学方法和传统教学型教学方法对比"></a>研究型教学方法和传统教学型教学方法对比</h3><p>​    传统教学型的方法认为知识时按部就班积累起来的,先学习解决问题的必要知识,然后就可以去解决问题.事实是前面去发现探索知识的人根本就不知道知识在哪里,以及需要用哪些知识.都是后人把前人的经验总结成教科书,解决问题需要先学习基础知识,让学生觉得简单好上手.研究型教学方法源于西方德国的研习班或者研讨班,他们的研究方法是观察-&gt;问题-&gt;猜测-&gt;检验.观察并非指观察老师讲的案例符合老师所讲,而是观察非正常现象(正常现象就是符合你的经验和直觉).非常现象指的是现有理论不能解释的地方.同时也说明你到达了前沿阵地,没有人做过.观察后就要提出一个问题去挑战现有的理论.现有理论无论是自然科学还是社会科学从来没有唯一正确的理论,一直都是几个学派在那里竞争.竞争看问题的角度,谁能解释的更好.有了问题,下一步就是解决问题.解决问题的答案永远不止一个,尽可能的想有多少种解决问题的答案.然后怎样找出一个答案呢,就是通过猜.猜的过程体现了想象力丰富程度.猜测之后,就要通过几种办法去检验猜测.现有常用的方法就是通过数据检验,但数据不够时就用历史去检验.还不行时,就通过现场观察.</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo &amp; next-----那些年走过的坑</title>
+      <link href="2017/01/23/Hexo-next-%E9%82%A3%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E5%9D%91/"/>
+      <url>2017/01/23/Hexo-next-%E9%82%A3%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E5%9D%91/</url>
+      
+        <content type="html"><![CDATA[<p>想要绕过hexo 和next 主题的一些坑么，别犹豫跟我来。<br><a id="more"></a></p><h2 id="阅读全文功能"><a href="#阅读全文功能" class="headerlink" title="阅读全文功能"></a>阅读全文功能</h2><p><code>摘要</code><br><code>&lt;!-- more --&gt;</code><br><code>文章正文</code><br>这样就可以部分显示文字，点击阅读全文。</p><h2 id="Next-主题分类页面和标签页面不显示"><a href="#Next-主题分类页面和标签页面不显示" class="headerlink" title="Next 主题分类页面和标签页面不显示"></a>Next 主题分类页面和标签页面不显示</h2><p>　　官网给出的添加分类页面和标签页面有点问题，按官方的方法始终分类页面和标签页面不显示，即使有文章也不行。  这个问题搞了一下午才搞定。有同样问题的小伙伴可以来看看。<br><img src="https://ww4.sinaimg.cn/large/006tKfTcgy1fc11496idzj30ku0iajrz.jpg" alt><br>　　其实把里面的”categories”变为categories和”tags”变为tags后，即可正常显示分类和标签页面。</p>]]></content>
+      
+      
       <categories>
-        <category>学习笔记</category>
+          
+          <category> Hexo博客 </category>
+          
       </categories>
-      <tags>
-        <tag>跨学科思维</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阻止行动的到底是什么</title>
-    <url>/2018/11/17/%E9%98%BB%E6%AD%A2%E8%A1%8C%E5%8A%A8%E7%9A%84%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88/</url>
-    <content><![CDATA[<h2 id="导语"><a href="#导语" class="headerlink" title="导语:"></a>导语:</h2><blockquote>
-<p>总会发现这样的情况:当脑海里有一个想法想去实现时,总有很多对立面浮现在脑海中.让我逐渐失去了信心,最终它止步于此.到底是什么阻挡了它前进的脚步? 这引起了我的好奇心, 去揭开脑海中对立面的真实面目.<br><a id="more"></a>   </p>
-</blockquote>
-<h3 id="无形的界限"><a href="#无形的界限" class="headerlink" title="无形的界限"></a>无形的界限</h3><p>​      大脑喜欢用已有模式去解释未知的事, 所以当你看到一张脸即使她还没说话但我们已经对她有了大致的判断.这样模式会减少脑力的消耗,帮助人类保存精力.同样的事发生在我们所接受的学校教育、家庭教育和各种媒体教育.毫无疑问的是我们在获取知识的同时,也在不断的塑造自我的界限.学校及家庭教育中有相当一部分是规定我们的行为界限,但都未讲明原因.学生时代只要越界就会遭受到老师或者家长的惩罚.学生时代之所以不去越界的原因是会遭到惩罚而不是理解规则制定的目的. 所以渐渐的学生就适应了这种思维模式,一味的去遵守规则和保证自己永远在界内.这就是学生时代形成无形的界限伴随我们一身.</p>
-<h3 id="怎样去改变"><a href="#怎样去改变" class="headerlink" title="怎样去改变"></a>怎样去改变</h3><p>从根本上来说之所以会形成这样的思维模式,是因为环境的造就以及自己未意识到这样的过程.要改变这样的状况,第一点就是要形成质疑思维.接受知识或者观点时,首先要质疑;然后去求证;最后去选择性接受.也就是我们要改变之前的思维方式,不意味的把教条当作权威当作真理.只有检验过的结论,才值得我们去接受.以上所说综合起来就是形成批判性思维.</p>
-<h3 id="不要怕跟别人不一样"><a href="#不要怕跟别人不一样" class="headerlink" title="不要怕跟别人不一样"></a>不要怕跟别人不一样</h3><p>要有一种长期眼光和成长性思维去看待自己的成长,不要惧怕和别人不一样而怀疑自己是错的.探索和行动的过程恰恰是你拓宽边界的方法.在每一次小的尝试之后,你都会获得一些感悟或者推翻你之前对于自己所下的结论.就是要这样积累小的尝试,一段时间后你就会重新审视自己.重新调整自己认知世界的地图,拓宽地图的边界.变得乐于行动,通过行动去寻求想要的答案.</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 阅读全文功能 </tag>
+            
+            <tag> 标签和分类 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用问题来认识自己</title>
+      <link href="2017/01/23/%E7%94%A8%E9%97%AE%E9%A2%98%E6%9D%A5%E5%8F%8D%E6%80%9D%E4%B8%8B%E8%87%AA%E5%B7%B1/"/>
+      <url>2017/01/23/%E7%94%A8%E9%97%AE%E9%A2%98%E6%9D%A5%E5%8F%8D%E6%80%9D%E4%B8%8B%E8%87%AA%E5%B7%B1/</url>
+      
+        <content type="html"><![CDATA[<p>有时候自己才是最陌生的，通过问题来深挖自己内心的真实想法。<br><a id="more"></a>   </p><h2 id="为什么要写博客"><a href="#为什么要写博客" class="headerlink" title="为什么要写博客"></a>为什么要写博客</h2><p>　　说实话我早有打算自己写一个博客来记录下自己的过往和经历，但是由于自己得了一种怪病。一直找不到良药来医治，这个病的名字就叫做懒。所以就一拖再拖。真的让自己下定决心要开始搞一个博客是看了知乎专栏里的一篇文章名为<a href="https://zhuanlan.zhihu.com/p/19743861?columnSlug=cnfeat" target="_blank" rel="noopener">《为什么你要写博客》</a>，作者<strong>陈素封</strong>。作者确实写到了我的痛处，而我也深有体会。我喜欢编程，虽然水平渣渣但特喜欢折腾。没办法年轻人火气大，没有女朋友总得有地方发泄一下。每当我Google找到解决某种问题的解决方案，过段时间又碰到同样的问题又得去查一遍。重复这个过程白白浪费了我很多时间。还有就是当我在某一时间突然悟道或者想通之前没有明白的事，当时很清楚但是过段时间自己又忘得一干二净。所以老话讲好记性不如烂笔头果然没错。自然写博客就被提上了必做的清单。</p><h2 id="重新认识自己"><a href="#重新认识自己" class="headerlink" title="重新认识自己"></a>重新认识自己</h2><p>　　认识自己好像是一个被讲的很烂的话题，但从没觉得认识过自己。觉得认识自己需要从身体里跳出来站在一个旁人的角度来审视自己，我做不到所以就没去深究认识自己。但读完这篇文章后，有个想法通过回答一些问题可以把自己展示出来给大家。大家就可以站在一个第三方的角度来审视。即便没人愿意这样做，到了一年半载之后。当我再回顾这篇博文时，也能站在一个客观的角度去认识当时的自己。下面是知乎文章内容里的<strong>9个问题</strong>我来回答下：<br>　　<strong>1.请介绍下你自己，你是一个什么样的人？</strong><br>　　一个大学毕业两年半目前混的不怎样的单身汪。游离在理想主义和现实主义之间的一个矛盾体。碰到好奇的事物，花三天三夜也要弄明白不然会吃不好睡不好的人。一个总要把不喜欢做的事拖到最后的人，喜欢清闲却又讨厌清闲，喜欢安定又讨厌安定，喜欢远行却又待在原地不动的人。做事非常认真不喜欢出错，追求完美不喜欢瑕疵，好独处不喜欢别人长时间打扰的人。这些合起来大概就是我了。   </p><p>　　<strong>2.你有什么理想吗？这个理想是怎么形成的？</strong><br>　　目前理想对我来说就是实现财务自由。可能由于自己这两年半每当自己想行动的时候总是在考虑钱的问题。   </p><p>　　<strong>3.你理想的伴侣关系是什么样的？你自己在这个伴侣关系中扮演什么样的角色？要承担什么样的责任？</strong><br>　　理想的关系就是即独立又相互吸引，充分信任对方并有各自的私属空间，遇事能一起面对和解决而不是抱怨和逃避。扮演的角色应该是一个灯塔，能指明双方关系发展的方向和解决问题的引导者。承担的责任：照顾双方的父母，引导孩子的成长，让伴侣有安全感和热爱生活。   </p><p>　　<strong>4.你理想的事业是什么，你正在做的工作符合你的事业理想么？这份工作对你的意义是什么？</strong><br>　　理想职业是做程序员。现在从事货物运输管理工作。这份工作对我的意义就是混口饭吃，不至于向父母伸手。   </p><p>　　<strong>5.你对亲子关系怎么看？对你来说，什么是一个理想的父亲或者母亲，你期望自己成为这样一个父亲或母亲么？</strong><br>　　亲子关系应该是又像大哥哥又像朋友又像智者。理想的父亲应该是引导孩子，在遇到困难时鼓励孩子一步步解决问题，孩子在遇到困难时不轻易向父亲求助。培养孩子形成一种成长式思维模式，把失败看成是成长路上的基石。解答孩子在成长中遇到好奇的问题，比如性和身体变化。   </p><p>　　<strong>6.你对钱怎么看，你认为赚到多少钱是足够的？如果你明天一早醒来，已经有足够的钱，你将会如何继续安排你的生活？</strong><br>　　钱不是做事考虑的主要因素时，这时就够了。如果有足够的钱，应该还是按原计划走吧。可能进度会变快了。   </p><p>　　<strong>7.对你来说，什么是理想的性生活？什么是理想的性道德，在你的性道德观中，什么样的性生活是禁忌，需要避免的，什么样的性生活是美好的，需要得到鼓励和发展的？</strong><br>　　双方以享受为目的性生活是理想的。理想的性道德是同时忠于精神和身体。性生活的禁忌精神和身体的不忠。双方都能从性生活中获得愉悦感和实现各自的性幻想，这样的性生活是美好的。      </p><p>　　<strong>8.你的择友标准是什么？什么样的人你会愿意交往，什么样的人你会拒绝和他交往？</strong><br>　　交友的标准是言而有信，表里如一。满足标准的愿意交往。反之则拒绝和他交往。    </p><p>　　<strong>9.你对死亡怎么看？你希望自己活到多少岁，你准备怎么度过从现在到死亡的这段时间？如果你要立遗嘱，这份遗嘱怎么写？</strong><br>　　人固有一死，只是早晚的问题。希望自己活得越长越好很期待看到这个世界在我有生之年会有什么样的变化。我会努力实现财务自由，然后专心编程，实现我用代码让生活更加便捷的初衷。下面是我的遗嘱：<br>　　孩子我没有什么可留给你的，因为这是你的人生必须要按你的方式活。我想留给你一句话：人生苦难重重，苦乐相随。    </p><p>　　  回答这九个问题还是花了不少时间，这就是这个阶段我的回答。5年后我会再回答一遍，看一下有什么变化。     </p><p>引用：<br>1.<a href="https://zhuanlan.zhihu.com/p/19743861?columnSlug=cnfeat" target="_blank" rel="noopener">《为什么你要写博客》— 陈素封</a><br>2.《很少人能顺畅回答这9个问题——心理治疗刚开始医生常常会先问你的》— 李孟潮]　　　　　　</p>]]></content>
+      
+      
       <categories>
-        <category>思考</category>
+          
+          <category> 思考 </category>
+          
       </categories>
-      <tags>
-        <tag>行动</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 自我反思 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
