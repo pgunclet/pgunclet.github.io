@@ -108,6 +108,61 @@
       </tags>
   </entry>
   <entry>
+    <title>MySQL中文乱码的解决方案</title>
+    <url>/2017/01/31/MySQL%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<ul>
+<li>创建数据库的时候<a id="more"></a>
+</li>
+</ul>
+<blockquote>
+<p>create database  database_name </p>
+<p>character set ‘utf8’</p>
+<p>collate ‘utf8_general_ci’;</p>
+</blockquote>
+<ul>
+<li>建表的时候</li>
+</ul>
+<blockquote>
+<p>create table table_name(</p>
+<p>‘ID’ varchar(40) NOT NULL,</p>
+<p>‘UserID’ varchar(40) NOT NULL,</p>
+<p>) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
+</blockquote>
+<ul>
+<li>查看默认的编码格式</li>
+</ul>
+<blockquote>
+<p>show variables like “%char%”;</p>
+<p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fca2jq1inij30mu074q2x.jpg" alt></p>
+</blockquote>
+<ul>
+<li>python 操作MySQL时</li>
+</ul>
+<blockquote>
+<p>db = MySQLdb.connect(“localhost”,”root”,”xt801”,”Blogdb”,<strong>charset=’utf8’</strong>)</p>
+</blockquote>
+<ul>
+<li>已经建好数据库和表的处理方法</li>
+</ul>
+<blockquote>
+<p>mysql&gt; set names utf8;</p>
+<p>等同于同时设定如下：</p>
+<p>SET character_set_client=’utf8’;<br>SET character_set_connection=’utf8’;<br>SET character_set_results=’utf8’;  </p>
+</blockquote>
+<p>参考：</p>
+<ul>
+<li>[彻底解决mysql中文乱码的办法](<a href="http://www.pc6.com/infoview/Article_63586.html）" target="_blank" rel="noopener">http://www.pc6.com/infoview/Article_63586.html）</a></li>
+<li>[python操作mysql中文显示乱码的解决方法](<a href="http://www.jb51.net/article/56086.htm）" target="_blank" rel="noopener">http://www.jb51.net/article/56086.htm）</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL数据库操作(2)</title>
     <url>/2017/01/30/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C-2/</url>
     <content><![CDATA[<p>MySQL 数据库高级操作<br><a id="more"></a></p>
@@ -454,58 +509,18 @@
       </tags>
   </entry>
   <entry>
-    <title>MySQL中文乱码的解决方案</title>
-    <url>/2017/01/31/MySQL%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<ul>
-<li>创建数据库的时候<a id="more"></a>
-</li>
-</ul>
-<blockquote>
-<p>create database  database_name </p>
-<p>character set ‘utf8’</p>
-<p>collate ‘utf8_general_ci’;</p>
+    <title>上天赐予你的礼物</title>
+    <url>/2021/06/23/%E4%B8%8A%E5%A4%A9%E8%B5%90%E4%BA%88%E4%BD%A0%E7%9A%84%E7%A4%BC%E7%89%A9/</url>
+    <content><![CDATA[<h2 id="导语"><a href="#导语" class="headerlink" title="导语"></a>导语</h2><blockquote>
+<p>今晚无意中看到刘文天在歌唱节目中演唱的《梦回唐朝》，听的我激情澎湃。突然间，我意识到天赋这东西真的存在。只是看你能否发现它，然后磨练它，最后终身相伴。</p>
 </blockquote>
-<ul>
-<li>建表的时候</li>
-</ul>
-<blockquote>
-<p>create table table_name(</p>
-<p>‘ID’ varchar(40) NOT NULL,</p>
-<p>‘UserID’ varchar(40) NOT NULL,</p>
-<p>) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
-</blockquote>
-<ul>
-<li>查看默认的编码格式</li>
-</ul>
-<blockquote>
-<p>show variables like “%char%”;</p>
-<p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fca2jq1inij30mu074q2x.jpg" alt></p>
-</blockquote>
-<ul>
-<li>python 操作MySQL时</li>
-</ul>
-<blockquote>
-<p>db = MySQLdb.connect(“localhost”,”root”,”xt801”,”Blogdb”,<strong>charset=’utf8’</strong>)</p>
-</blockquote>
-<ul>
-<li>已经建好数据库和表的处理方法</li>
-</ul>
-<blockquote>
-<p>mysql&gt; set names utf8;</p>
-<p>等同于同时设定如下：</p>
-<p>SET character_set_client=’utf8’;<br>SET character_set_connection=’utf8’;<br>SET character_set_results=’utf8’;  </p>
-</blockquote>
-<p>参考：</p>
-<ul>
-<li>[彻底解决mysql中文乱码的办法](<a href="http://www.pc6.com/infoview/Article_63586.html）" target="_blank" rel="noopener">http://www.pc6.com/infoview/Article_63586.html）</a></li>
-<li>[python操作mysql中文显示乱码的解决方法](<a href="http://www.jb51.net/article/56086.htm）" target="_blank" rel="noopener">http://www.jb51.net/article/56086.htm）</a></li>
-</ul>
+<a id="more"></a>
+<h3 id="上天给我的礼物是什么"><a href="#上天给我的礼物是什么" class="headerlink" title="上天给我的礼物是什么"></a>上天给我的礼物是什么</h3><p>我想大概就是对计算机和英语感兴趣吧。计算机可能是源于我小时候对拆和组装东西感兴趣，英语可能是给了我另一种不同的视角去看待同一件事。但我并没有刻意的发现它们对于我的影响，我还是在世俗的框架中用功利的心态对待这两件事。一件事你考虑的是回报的时候，那么你的行动会受制于回报或者说是驱动力来自于获得的多少。这会导致一个怪圈，事情的回报并不是每当你投入时就有可见的回报。所以当投入时没有相应的可见回报，这件事就很难持续下去。最终导致很多事情半途而废或者三分钟热度。一件事你一旦不计算回报来投入，那么它持续的动力只是你单纯的喜欢或者是享受。那么追求极致的享受，必然是极致的投入。我想这才是关于礼物的正确用法。</p>
+<h3 id="每个人都有自己的礼物"><a href="#每个人都有自己的礼物" class="headerlink" title="每个人都有自己的礼物"></a>每个人都有自己的礼物</h3><p>上天是公平的，每个人都给了一份礼物，只是人们不觉得这是礼物。人们想要的是他人的礼物，或者说是他人的结果。当在深夜扪心自问下自己，你真的不知道自己愿意把时间投入到什么事情上且可以不计回报。人们总是跟着社交媒体一窝蜂的去追求别人的礼物，以为只要完成了别人设定的条件就可以获得相应的结果。转了一圈到最后发现，还是两手空空。</p>
+<h3 id="是拆礼物还是当礼物不存在"><a href="#是拆礼物还是当礼物不存在" class="headerlink" title="是拆礼物还是当礼物不存在"></a>是拆礼物还是当礼物不存在</h3><p>礼物就在那里，你拆还是不拆。你不拆，说明你就没把它当成礼物。礼物本身不分高低贵贱，分高低贵贱的是人。你会怎样做出选择，选择自己的礼物，还是去追逐大众评选出来的礼物。确实不经历一些，事无法发现你的礼物。</p>
 ]]></content>
-      <categories>
-        <category>数据库</category>
-      </categories>
       <tags>
-        <tag>MySQL</tag>
+        <tag>礼物</tag>
       </tags>
   </entry>
   <entry>
@@ -573,19 +588,6 @@
       </categories>
       <tags>
         <tag>记录时间</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>多角度看事物</title>
-    <url>/2021/05/22/%E5%A4%9A%E8%A7%92%E5%BA%A6%E7%9C%8B%E4%BA%8B%E7%89%A9/</url>
-    <content><![CDATA[<p>&#160; &#160; &#160; &#160;有时候在思考为什么对于一个客观的物体或者事件，为什么我们大多数人立即就会有一个相同的立场和判断而且会坚信它的正确性。为什么不同立场的声音消失的如此之快，为什么与大多数人立场相一致会让我们感到安全和舒适？这一切的问题都源于我们接受了相同的教育，准确的说是相同判断标准。如果没有标准，或者标准松散，这样事物和事件的多角度就会展现出来。<br><a id="more"></a></p>
-<h2 id="总觉得事情肯定是这样"><a href="#总觉得事情肯定是这样" class="headerlink" title="总觉得事情肯定是这样"></a>总觉得事情肯定是这样</h2><p>&#160; &#160; &#160; &#160;以前还没发现自己以及大众会对社会中发生的事件会有如此一致的看法。之所以会发现是因为今天看了一本书，这本书基本上是2010年天涯博客上的博文以及评论组合而成的一本书。发现里面对于同一事件的看法不尽相同，从不同经历和年龄段的角度得出的结论相差很多。由此我发现自己可能无意识的带有大众媒体、学校和家庭给我塑造的一个唯一的角度去看问题。导致自己觉得与他人看法一致是没有问题的，与他人看法不一致时我会首先反思自己哪里思考的不对，根本不会下意识的认为大多数的人错了。</p>
-<h2 id="对于事情的看法其实就是判断"><a href="#对于事情的看法其实就是判断" class="headerlink" title="对于事情的看法其实就是判断"></a>对于事情的看法其实就是判断</h2><p>&#160; &#160; &#160; &#160;事件本身是个客观事件，不会随着人的看法而改变，会变的一直都是我们的判断依据。既然我们对于事件有了自己的看法也就是判断，那么我们的判断依据或者是判断标准是什么。如果我们不清楚自己的判断标准是什么，而且自己还得出了结论，这是很诡异的事情。但说到底还是自己没有弄清楚自己潜意识里的判断标准具体是什么，确信的一件事就是你已经有标准了。所以我们做出判断时，就要回溯自己的判断依据。然后去质疑这个判断依据的前提是否成立。一旦你弄清楚了自己做出判断的整个流程，那么其他人的观点你就可以用同样的方法去回溯，去质疑。</p>
-<h2 id="判断的来源就是你能获得的所有信息"><a href="#判断的来源就是你能获得的所有信息" class="headerlink" title="判断的来源就是你能获得的所有信息"></a>判断的来源就是你能获得的所有信息</h2><p>&#160; &#160; &#160; &#160;对事件做出判断有三个环节，一是信息源，二是判断标准，三是得出结论。所以出结论出发，有问题的只能是判断标准和信息源。如果我们的信息源一致，而且判断标准相同，那么我们得出的结论便会一致。判断标准的一致可能源于社会教育和家庭教育，信息源的一致也能源于我们没有其它的信息源。我们仅有的信息源也就是大众媒体，以及我们唯一懂的就是汉语同样会造成单一信息源的情况。如何扩大信息来源：一是学习一门外语，二是学习基本的信息获得技术，三是寻找反面信息来对比。</p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>&#160; &#160; &#160; &#160;当大众媒体对公共事件有了统一看法，我们就需要从小众媒体寻找其它的角度。把每种角度的信息源，判断标准以及结果进行对比。通过对比发现其中的逻辑漏洞，检验标准的先验条件是否成立。然后我们在站在每一个角度去看，是否能得出同样的观点。这可能就是换位思考的多人版本。</p>
-]]></content>
-      <tags>
-        <tag>思考</tag>
       </tags>
   </entry>
   <entry>
@@ -712,19 +714,6 @@
       </tags>
   </entry>
   <entry>
-    <title>读到一个回答对我的启发</title>
-    <url>/2021/05/22/%E8%AF%BB%E5%88%B0%E4%B8%80%E4%B8%AA%E5%9B%9E%E7%AD%94%E5%AF%B9%E6%88%91%E7%9A%84%E5%90%AF%E5%8F%91/</url>
-    <content><![CDATA[<p>是什么让你成为你，是什么让他成为他？<br><a id="more"></a></p>
-<blockquote>
-<p>What does “we are who we are” mean?<br>People are who they are, we don’t really change based on what other people want us to be. I am okay and you too are okay. We have our ways and that’s fine. Accept others as they are.</p>
-</blockquote>
-<p>&emsp;&emsp;这让我想到一个问题，什么让我成为我？是我的样貌？我的行为？还是我所拥有的东西？我的答案是我所出生的家庭和成长的环境。我的基因来自我的父母，也就是说在精子和卵子结合的那一刻，我的整体样貌就已经确定了，这是我无法选择的。我的成长环境决定了我是如何思考的，从而决定了我如何行动。我认为这两点让我成为我。让你是你或让你不是你的是他人的判断，但你永远都是你，不因他人的判断而改变。<br>&emsp;&emsp;由此让我联想到另外一个问题，是什么让别人或者社会能够接受你和认可你？是你的样貌？是你的行为？还是你所拥有的东西？我的答案是别人或者社会的标准。标准本质上是逻辑判断的条件，你满足或者不满足都有相应的结论。所以问题不在他人而在于你的选择，是迎合标准还是不迎合。<br>&emsp;&emsp;怎样让你成为你，让他成为他？我的答案是自然的做出每个选择，不因外在的任何标准。这就是让你成为你，让他成为他的途径。</p>
-]]></content>
-      <tags>
-        <tag>思考</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>阻止行动的到底是什么</title>
     <url>/2018/11/17/%E9%98%BB%E6%AD%A2%E8%A1%8C%E5%8A%A8%E7%9A%84%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88/</url>
     <content><![CDATA[<h2 id="导语"><a href="#导语" class="headerlink" title="导语:"></a>导语:</h2><blockquote>
@@ -739,6 +728,32 @@
       </categories>
       <tags>
         <tag>行动</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多角度看事物</title>
+    <url>/2021/05/22/%E5%A4%9A%E8%A7%92%E5%BA%A6%E7%9C%8B%E4%BA%8B%E7%89%A9/</url>
+    <content><![CDATA[<p>&#160; &#160; &#160; &#160;有时候在思考为什么对于一个客观的物体或者事件，为什么我们大多数人立即就会有一个相同的立场和判断而且会坚信它的正确性。为什么不同立场的声音消失的如此之快，为什么与大多数人立场相一致会让我们感到安全和舒适？这一切的问题都源于我们接受了相同的教育，准确的说是相同判断标准。如果没有标准，或者标准松散，这样事物和事件的多角度就会展现出来。<br><a id="more"></a></p>
+<h2 id="总觉得事情肯定是这样"><a href="#总觉得事情肯定是这样" class="headerlink" title="总觉得事情肯定是这样"></a>总觉得事情肯定是这样</h2><p>&#160; &#160; &#160; &#160;以前还没发现自己以及大众会对社会中发生的事件会有如此一致的看法。之所以会发现是因为今天看了一本书，这本书基本上是2010年天涯博客上的博文以及评论组合而成的一本书。发现里面对于同一事件的看法不尽相同，从不同经历和年龄段的角度得出的结论相差很多。由此我发现自己可能无意识的带有大众媒体、学校和家庭给我塑造的一个唯一的角度去看问题。导致自己觉得与他人看法一致是没有问题的，与他人看法不一致时我会首先反思自己哪里思考的不对，根本不会下意识的认为大多数的人错了。</p>
+<h2 id="对于事情的看法其实就是判断"><a href="#对于事情的看法其实就是判断" class="headerlink" title="对于事情的看法其实就是判断"></a>对于事情的看法其实就是判断</h2><p>&#160; &#160; &#160; &#160;事件本身是个客观事件，不会随着人的看法而改变，会变的一直都是我们的判断依据。既然我们对于事件有了自己的看法也就是判断，那么我们的判断依据或者是判断标准是什么。如果我们不清楚自己的判断标准是什么，而且自己还得出了结论，这是很诡异的事情。但说到底还是自己没有弄清楚自己潜意识里的判断标准具体是什么，确信的一件事就是你已经有标准了。所以我们做出判断时，就要回溯自己的判断依据。然后去质疑这个判断依据的前提是否成立。一旦你弄清楚了自己做出判断的整个流程，那么其他人的观点你就可以用同样的方法去回溯，去质疑。</p>
+<h2 id="判断的来源就是你能获得的所有信息"><a href="#判断的来源就是你能获得的所有信息" class="headerlink" title="判断的来源就是你能获得的所有信息"></a>判断的来源就是你能获得的所有信息</h2><p>&#160; &#160; &#160; &#160;对事件做出判断有三个环节，一是信息源，二是判断标准，三是得出结论。所以出结论出发，有问题的只能是判断标准和信息源。如果我们的信息源一致，而且判断标准相同，那么我们得出的结论便会一致。判断标准的一致可能源于社会教育和家庭教育，信息源的一致也能源于我们没有其它的信息源。我们仅有的信息源也就是大众媒体，以及我们唯一懂的就是汉语同样会造成单一信息源的情况。如何扩大信息来源：一是学习一门外语，二是学习基本的信息获得技术，三是寻找反面信息来对比。</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>&#160; &#160; &#160; &#160;当大众媒体对公共事件有了统一看法，我们就需要从小众媒体寻找其它的角度。把每种角度的信息源，判断标准以及结果进行对比。通过对比发现其中的逻辑漏洞，检验标准的先验条件是否成立。然后我们在站在每一个角度去看，是否能得出同样的观点。这可能就是换位思考的多人版本。</p>
+]]></content>
+      <tags>
+        <tag>思考</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>读到一个回答对我的启发</title>
+    <url>/2021/05/22/%E8%AF%BB%E5%88%B0%E4%B8%80%E4%B8%AA%E5%9B%9E%E7%AD%94%E5%AF%B9%E6%88%91%E7%9A%84%E5%90%AF%E5%8F%91/</url>
+    <content><![CDATA[<p>是什么让你成为你，是什么让他成为他？<br><a id="more"></a></p>
+<blockquote>
+<p>What does “we are who we are” mean?<br>People are who they are, we don’t really change based on what other people want us to be. I am okay and you too are okay. We have our ways and that’s fine. Accept others as they are.</p>
+</blockquote>
+<p>&emsp;&emsp;这让我想到一个问题，什么让我成为我？是我的样貌？我的行为？还是我所拥有的东西？我的答案是我所出生的家庭和成长的环境。我的基因来自我的父母，也就是说在精子和卵子结合的那一刻，我的整体样貌就已经确定了，这是我无法选择的。我的成长环境决定了我是如何思考的，从而决定了我如何行动。我认为这两点让我成为我。让你是你或让你不是你的是他人的判断，但你永远都是你，不因他人的判断而改变。<br>&emsp;&emsp;由此让我联想到另外一个问题，是什么让别人或者社会能够接受你和认可你？是你的样貌？是你的行为？还是你所拥有的东西？我的答案是别人或者社会的标准。标准本质上是逻辑判断的条件，你满足或者不满足都有相应的结论。所以问题不在他人而在于你的选择，是迎合标准还是不迎合。<br>&emsp;&emsp;怎样让你成为你，让他成为他？我的答案是自然的做出每个选择，不因外在的任何标准。这就是让你成为你，让他成为他的途径。</p>
+]]></content>
+      <tags>
+        <tag>思考</tag>
       </tags>
   </entry>
 </search>
